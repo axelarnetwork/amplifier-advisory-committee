@@ -2,7 +2,7 @@
 
 # Axelar Threat model report 
 
-**Initially prepared by [FYEO](https://www.fyeo.io/) for the Axelar Foundation with contributions from the Amplifier Advisory Committee and Axelar engineering team.**
+**Initially prepared by [FYEO](https://www.fyeo.io/) for the Axelar FDN with contributions from the Amplifier Advisory Committee and Axelar engineering team.**
 
 *This document may be updated from time to time as certain features of the Amplifier product are still under active development.*
 
