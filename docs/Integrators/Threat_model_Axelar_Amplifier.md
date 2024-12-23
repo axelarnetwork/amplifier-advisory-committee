@@ -2,7 +2,7 @@
 
 # Axelar Threat model report 
 
-**Initially prepared by [FYEO](https://www.fyeo.io/) for the Axelar Foundation with contributions from the Amplifier Advisory Committee and Axelar engineering team.**
+**Initially prepared by [FYEO](https://www.fyeo.io/) for the Axelar Foundation with contributions from the Amplifier Advisory Committee and the Interop Labs engineering team. This threat model does not identify specific threats or risks, but describes areas of potential concern. It is intended for use by auditors as a guide during their audits. **
 
 *This document may be updated from time to time as certain features of the Amplifier product are still under active development.*
 
