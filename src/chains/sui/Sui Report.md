@@ -68,13 +68,22 @@ The desirable properties related to Sui’s architecture and its integration wit
 
 ## Section 4: Axelar Integration Components [Ackee]
 ### 4.1 Code Quality and Transparency
-- Audit summaries and findings relevant to the Sui integration.
+Axelar was responsible for developing the Sui external contracts. [Axelar GCP Sui](https://github.com/axelarnetwork/axelar-cgp-sui) is Axelar Cross-chain Gateway Protocol implementation developed in [Move](https://sui.io/move) programming language. The codebase was audited by Ottersec [6/24](https://github.com/axelarnetwork/audits/blob/main/audits/2024-06%20Ottersec.pdf) and [11/24](https://github.com/axelarnetwork/audits/blob/main/audits/2024-11%20Ottersec%20-%20Sui.pdf). [Ackee](https://ackee.xyz/) performed a cross-check of audit reports and confirmed that all reported findings were remediated except one informational finding (OS-AXN-SUG-00) from the 11/24 audit.
+
+Summary of findings from Sui CGP audits (Reported-Fixed-Acknowledged):
+
+| Company            | Critical | High  | Medium | Low   | Info  |
+|--------------------|----------|-------|--------|-------|-------|
+| **Ottersec 6/24**  |          |       | 1-1-0  | 3-3-0 | 3-3-0 |
+| **Ottersec 11/24** |          | 1-1-0 | 1-1-0  | 4-4-0 | 4-3-1 |
+
+No audit report for [Sui Amplifier](https://github.com/axelarnetwork/axelar-amplifier/tree/main/ampd/src/sui) code was provided.
 
 ### 4.2 Understanding of Deployment and Maintenance Plans
-- Plans for secure deployment and ongoing maintenance of Sui-related components.
+Deployment scripts for Sui Axelar components are provided, and the process is well documented in the [Axelar repository](https://github.com/axelarnetwork/axelar-contract-deployments/tree/main/sui#sui-deployment-scripts). The code is well-structured, and [Ackee](https://ackee.xyz/) did not identify any best practices violations in the development scripts.
 
 ### 4.3 Mitigation of Potential Risks
-- Risk management strategies specific to the Sui integration.
+Sui and Axelar confirm that the system includes proper logging and mechanisms to resolve unusual situations in the network to avoid further damage to the network and users' funds. Sui performs continuous security monitoring and a proactive approach to vulnerability management.
 
 ---
 
