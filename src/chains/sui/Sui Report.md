@@ -143,4 +143,4 @@ The integration offers Sui developers access to broader liquidity pools and inte
 - **Node.Monster**: Eyal Alsheich, Contributor
 - **Common Prefix**: Nikolaos Kamarinakis, Contributor
 - **Ackee**: Stepan Sonsky, Contributor
-- **Eiger**: Marcin
+- **Eiger**: Marcin, Contributor
