@@ -2,7 +2,7 @@
 
 ## Project Overview
 - **Chain Name**: Sui
-- **Proposal Reviewed**: [Insert Proposal Details]
+- **Proposal Reviewed**: src/chains/sui/Sui Integration Proposal.md
 - **Sui Integration Proposal**: Overview of objectives for integrating Sui with Axelar Network.
 - **Points of Contact**: [Insert relevant channels and individuals for communication.]
 
