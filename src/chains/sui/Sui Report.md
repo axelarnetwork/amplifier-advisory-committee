@@ -4,7 +4,6 @@
 - **Chain Name**: Sui
 - **Proposal Reviewed**: [Sui Integration Proposal]
 - **Sui Integration Proposal**: Overview of objectives for integrating Sui with Axelar Network.
-- **Points of Contact**: [Insert relevant channels and individuals for communication.]
 
 ---
 
