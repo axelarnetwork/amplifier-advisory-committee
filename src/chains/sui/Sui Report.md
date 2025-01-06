@@ -2,7 +2,7 @@
 
 ## Project Overview
 - **Chain Name**: Sui
-- **Proposal Reviewed**: [Sui Integration Proposal](src/chains/sui/Sui Integration Proposal.md)
+- **Proposal Reviewed**: [Sui Integration Proposal]
 - **Sui Integration Proposal**: Overview of objectives for integrating Sui with Axelar Network.
 - **Points of Contact**: [Insert relevant channels and individuals for communication.]
 
@@ -124,7 +124,11 @@ Sui and Axelar confirm that the system includes proper logging and mechanisms to
 ---
 
 ## Conclusion [Common Prefix, Eiger, NodeMonster, Ackee]
-- Summary of findings and recommendations for the integration.
+The Sui integration with Axelar Network presents a significant opportunity to expand interoperability and enable seamless cross-chain transactions for developers. The evaluation highlights Sui’s strengths, including its innovative Move-based programming model, object-based accounting system, and high transaction throughput enabled by Narwhal and Tusk consensus. Axelar’s integration components demonstrate strong adherence to best practices, with thorough audits and well-documented deployment plans.
+
+Despite these strengths, the assessment identified critical areas for improvement. Sui’s centralized governance, recent mainnet outage, and limited audits since 2023 raise concerns about network resilience and community engagement. Historical vulnerabilities, including denial-of-service (DoS) and transaction validation bugs, emphasize the need for robust security mechanisms. The complexity of Sui’s architecture and reliance on validator coordination in high-load scenarios necessitate enhanced fault tolerance and operational readiness.
+
+The integration offers Sui developers access to broader liquidity pools and interoperable dApps, fostering innovation across the ecosystem. To realize these benefits, addressing security risks, decentralization challenges, and governance gaps will be critical. By implementing proactive measures such as expanded audits, improved disaster recovery plans, and decentralized decision-making, Sui can solidify its position as a secure and scalable blockchain within the Axelar Network ecosystem.
 
 ---
 
@@ -136,7 +140,8 @@ Sui and Axelar confirm that the system includes proper logging and mechanisms to
 ## Committee Members
 - List of team members and their roles in the assessment.
 - ### Committee Members
-- **Axelar**:
-- **Node.Monster**: 
-- **Common Prefix**: 
-- **Ackee**: 
+- **Axelar**: Liana Spano, Coordinator
+- **Node.Monster**: Eyal Alsheich, Contributor
+- **Common Prefix**: Nikolaos Kamarinakis, Contributor
+- **Ackee**: Stepan Sonsky, Contributor
+- **Eiger**: Marcin
