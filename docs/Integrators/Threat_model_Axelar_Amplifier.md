@@ -42,7 +42,7 @@ The threat model analysis validates the platform's robust security model, emphas
 
 The Axelar platform enables secure cross-chain communication, asset transfers, and message routing between diverse blockchain environments. However, given the complexity of interchain operations, several high-priority security risks have been identified that could impact system integrity, user trust, and financial security.
 
-This report has been focused on the integration of Axelar to the XRPL chain
+This report has been focused on the integration of Axelar to layer-1 blockchains via Axelar's Interchain Amplifier mechanism.
 
 * The analysis highlights **Cross-Chain Message Tampering** and **Double-Spend Risks** as critical threats, where unauthorized message modification or transaction duplication could lead to significant asset loss.   
 * Other medium-priority risks, such as **Contract Logic Exploits** and **Cross-Chain Rate Limit Exploits**, indicate vulnerabilities in smart contract functions and rate-limiting mechanisms.   
@@ -107,11 +107,11 @@ The system employs a multifaceted approach to asset protection, central to its s
 **User Funds**:
 
 * **Locked Tokens**: Tokens locked on the source chain during a cross-chain transfer.  
-* **Wrapped Tokens**: Representations of locked tokens issued on the destination chain (e.g., Ethereum tokens on XRP Ledger).  
+* **Wrapped Tokens**: Representations of locked tokens issued on the destination chain (e.g., Ethereum tokens on another, newly connected layer-1 blockchain).  
   **Governance and Validator Assets**:  
 * **Staked Tokens**: Tokens staked by validators and verifiers, which are at risk if they engage in malicious activity.  
   **Multi-signature Accounts**:  
-* **Multi-sig Wallets**: Custodial accounts on chains like XRP Ledger, controlled by external verifiers and storing user funds temporarily for secure asset handling.  
+* **Multi-sig Wallets**: Custodial accounts on connected blockchains, controlled by external verifiers and storing user funds temporarily for secure asset handling.  
   **Protocol-Controlled Accounts**:  
 * **Admin Keys**: Keys controlling protocol settings, such as introducing new tokens or updating multi-sig accounts in response to verifier changes.  
   **Cross-chain Message Integrity**:  
@@ -123,7 +123,7 @@ The system employs a multifaceted approach to asset protection, central to its s
 
 The security model for Axelar Amplifier emphasizes decentralized verification, governance, and a layered approach to validating cross-chain operations:
 
-1. **External Verification**: Independent verifiers authenticate and authorize messages using Axelar's gateways and multi-layer verification protocols, ensuring message integrity for GMP and asset transfer. For chains like XRP Ledger, a multi-signature (multi-sig) wallet is managed by external verifiers to handle transactions securely.  
+1. **External Verification**: Independent verifiers authenticate and authorize messages using Axelar's gateways and multi-layer verification protocols, ensuring message integrity for GMP and asset transfer. For blockchains connected via Interchain Amplifier, a multi-signature (multi-sig) wallet is managed by external verifiers to handle transactions securely.  
 2. **Governance and Validator Oversight**: Axelar’s governance, powered by the Cosmos SDK, enforces protocol updates, contract migrations, verifier roles, and chain integrations. Validators, who stake Axelar tokens, vote on these changes, ensuring a decentralized and community-driven approach to managing Axelar's infrastructure. Governance includes a proposal system where validators review and approve requests to modify the Amplifier’s core components or add integrations.  
 3. **Modular Gateway and Verification Layers**: Amplifier introduces a modular system where each cross-chain integration has customizable gateways and CosmWasm-supported on-chain message routers. These routers and gateways manage verifications per chain, allowing independent control and auditability for each cross-chain link.  
 4. **Relayer Liveness Trust and Accountability**: While relayers in the Amplifier architecture are non-trusted entities for message integrity, they are essential for message liveness (i.e., timely delivery). Governance can penalize or replace relayers that fail to forward messages, maintaining reliability and service continuity across chains.  
@@ -163,7 +163,7 @@ The platform faces a spectrum of security threats that range from critical to hi
 | Cross-Chain Message Tampering | Unauthorized modification or spoofing of messages between chains. | Compromised External Verifiers, Governance Attackers | Critical | Medium |
 | Double-Spend Risk | Duplicate messages leading to double-spend scenarios across chains. Relayer relays the same message twice etc., should not be able to double spend | Compromised Validators, External Verifiers, Relayer, DeFi Hackers | Critical | Medium |
 | Contract Logic Exploits | Exploiting vulnerabilities in smart contracts within Axelar or its gateways | General DeFi Hackers, Validators | Critical | Medium |
-| Multisig Key Compromise | Unauthorized access to the multisig account controlling assets on chains without native smart contracts (e.g., XRP) | Compromised External Verifiers | Critical | Medium |
+| Multisig Key Compromise | Unauthorized access to the multisig account controlling assets on chains without native smart contracts | Compromised External Verifiers | Critical | Medium |
 | Asset Custody Compromise | Loss of locked or wrapped tokens due to unauthorized multi-sig access or verifier collusion. Check if less than quorum can drain funds | External Verifiers, Compromised Validators | Critical | N/A |
 | Governance Exploitation | Malicious changes to protocol governance, enabling unauthorized updates or verifier roles. Check if less than quorum can drain funds | Governance Attackers, Compromised Validators | Critical | N/A |
 | Reentrancy Attacks | Recursive calls in smart contracts could lead to fund drain by allowing multiple executions before state updates | General DeFi Hackers | Critical | Low |
