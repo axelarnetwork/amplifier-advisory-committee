@@ -2,8 +2,15 @@
 
 ## Project Overview
 - **Chain Name**: Sui
-- **Proposal Reviewed**: [Sui Integration Proposal]
-- **Sui Integration Proposal**: Overview of objectives for integrating Sui with Axelar Network.
+- **Proposal Reviewed**: [Sui Integration Proposal](Sui%20Integration%20Proposal.md)
+
+### Table of Contents
+  #### [Section 1: Assessment Methodology](#section-1-assessment-methodology-1)
+  #### [Section 2: Network and Protocol Integrity](#section-2-network-and-protocol-integrity-1)
+  #### [Section 3: Security and Risks](#section-3-security-and-risks-1)
+  #### [Section 4: Axelar Integration Components](#section-4-axelar-integration-components-1)
+  #### [Conclusion](#conclusion-1)
+---
 
 ---
 
@@ -46,7 +53,7 @@ The desirable properties related to Sui’s architecture and its integration wit
 
 ---
 
-## Section 2: Network and Protocol Integrity [Common Prefix, Eiger, NodeMonster]
+## Section 2: Network and Protocol Integrity 
 ### 2.1 Network Architecture
 Sui is a Layer 1 blockchain that supports scalable, high-performance decentralized applications. Unlike traditional blockchain architectures, Sui employs an object-based accounting model and a modified Delegated Proof-of-Stake (DPoS) consensus mechanism. Transactions are categorized into "simple" and "complex," with simple transactions bypassing traditional consensus steps, enhancing performance. Complex transactions leverage Narwhal for data availability and Bullshark for ordering, ensuring efficiency and resilience.
 
@@ -70,7 +77,7 @@ Sui was founded in 2021 by Evan Cheng, Adeniyi Abiodun, Sam Blackshear, George D
 
 ---
 
-## Section 3: Security and Risks [Common Prefix, Eiger, NodeMonster]
+## Section 3: Security and Risks 
 ### 3.1 Smart Contract Security and Vulnerabilities
 Sui’s smart contracts are written in Sui Move, a Rust-based programming language derived from the Move language developed at Meta. This language offers enhanced safety features, including:
 - **Type Safety:** Reduces vulnerabilities by ensuring strict data type adherence.
@@ -101,7 +108,7 @@ Despite its challenges, Sui’s commitment to innovation and proactive security 
 
 ---
 
-## Section 4: Axelar Integration Components [Ackee]
+## Section 4: Axelar Integration Components 
 ### 4.1 Code Quality and Transparency
 Axelar was responsible for developing the Sui external contracts. [Axelar GCP Sui](https://github.com/axelarnetwork/axelar-cgp-sui) is Axelar Cross-chain Gateway Protocol implementation developed in [Move](https://sui.io/move) programming language. The codebase was audited by Ottersec [6/24](https://github.com/axelarnetwork/audits/blob/main/audits/2024-06%20Ottersec.pdf) and [11/24](https://github.com/axelarnetwork/audits/blob/main/audits/2024-11%20Ottersec%20-%20Sui.pdf). [Ackee](https://ackee.xyz/) performed a cross-check of audit reports and confirmed that all reported findings were remediated except one informational finding (OS-AXN-SUG-00) from the 11/24 audit.
 
@@ -122,7 +129,7 @@ Sui and Axelar confirm that the system includes proper logging and mechanisms to
 
 ---
 
-## Conclusion [Common Prefix, Eiger, NodeMonster, Ackee]
+## Conclusion 
 The Sui integration with Axelar Network presents a significant opportunity to expand interoperability and enable seamless cross-chain transactions for developers. The evaluation highlights Sui’s strengths, including its innovative Move-based programming model, object-based accounting system, and high transaction throughput enabled by Narwhal and Tusk consensus. Axelar’s integration components demonstrate strong adherence to best practices, with thorough audits and well-documented deployment plans.
 
 Despite these strengths, the assessment identified critical areas for improvement. Sui’s centralized governance, recent mainnet outage, and limited audits since 2023 raise concerns about network resilience and community engagement. Historical vulnerabilities, including denial-of-service (DoS) and transaction validation bugs, emphasize the need for robust security mechanisms. The complexity of Sui’s architecture and reliance on validator coordination in high-load scenarios necessitate enhanced fault tolerance and operational readiness.
@@ -131,14 +138,14 @@ The integration offers Sui developers access to broader liquidity pools and inte
 
 ---
 
-## Next Steps [Common Prefix, Eiger, NodeMonster, Ackee]
-- Outline of actions required for completion.
+## Next Steps 
+To ensure the successful integration of Sui with Axelar Network and long-term operational resilience, the following actions are recommended:
+
+Focus on maintaining integration stability and performance through continuous monitoring and proactive issue detection. Node Monster will spin up a globally distributed Sui validator to enhance network redundancy and decentralization, verifying the final implementation status with the Axelar Foundation. Additionally, the development team should design and implement a proactive outage management plan, including on-chain smart contract protections, to address potential network disruptions on Sui.
 
 ---
 
 ## Committee Members
-- List of team members and their roles in the assessment.
-- ### Committee Members
 - **Axelar**: Liana Spano, Coordinator
 - **Node.Monster**: Eyal Alsheich, Contributor
 - **Common Prefix**: Nikolaos Kamarinakis, Contributor
