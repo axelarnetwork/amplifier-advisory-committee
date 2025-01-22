@@ -114,7 +114,7 @@ Despite its challenges, Sui’s commitment to innovation and proactive security 
 Axelar was responsible for developing the Sui external contracts. [Axelar GCP Sui](https://github.com/axelarnetwork/axelar-cgp-sui) is Axelar Cross-chain Gateway Protocol implementation developed in [Move](https://sui.io/move) programming language. The codebase underwent the following audits:
 - Ottersec [6/24/2024](https://github.com/axelarnetwork/audits/blob/main/audits/2024-06%20Ottersec.pdf) 
 - Ottersec [11/24/2024](https://github.com/axelarnetwork/audits/blob/main/audits/2024-11%20Ottersec%20-%20Sui.pdf)
-- Ackee [11/24/2024](https://github.com/axelarnetwork/audits/blob/main/audits/2024-11%20Ackee%20Blockchain.pdf) performed a cross-check of audit reports and confirmed that all reported findings were remediated except one informational finding (OS-AXN-SUG-00) from the Ottersec 11/24 audit.
+- Ackee performed a cross-check of audit reports and confirmed that all reported findings were remediated except one informational finding (OS-AXN-SUG-00) from the Ottersec 11/24 audit.
 
 Summary of findings from Sui CGP audits (Reported-Fixed-Acknowledged):
 
