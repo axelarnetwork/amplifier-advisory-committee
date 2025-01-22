@@ -56,7 +56,7 @@ The desirable properties related to Sui’s architecture and its integration wit
 
 ## Section 2: Network and Protocol Integrity 
 ### 2.1 Network Architecture
-Sui is a Layer 1 blockchain that supports scalable, high-performance decentralized applications. Unlike traditional blockchain architectures, Sui employs an object-based accounting model and a modified Delegated Proof-of-Stake (DPoS) consensus mechanism. Transactions are categorized into "simple" and "complex," with simple transactions bypassing traditional consensus steps, enhancing performance. Complex transactions leverage Narwhal for data availability and Bullshark for ordering, ensuring efficiency and resilience.
+Sui is a Layer 1 blockchain that supports scalable, high-performance decentralized applications. Unlike traditional blockchain architectures, Sui employs an object-based accounting model and a modified Delegated Proof-of-Stake (DPoS) consensus mechanism. Transactions are categorized into "simple" (or ["fast path"](https://move-book.com/object/fast-path-and-consensus.html#fast-path)) and "complex" (or ["consensus path"](https://move-book.com/object/fast-path-and-consensus.html#consensus-path)), with simple transactions bypassing traditional consensus steps, enhancing performance. Complex transactions leverage Narwhal for data availability and Bullshark for ordering, ensuring efficiency and resilience.
 
 Key Architectural Features:
 - **Object-Based Accounting Model:** Combines features of UTXO and account-based models to enable granular state management, making it particularly suitable for complex dApps.
