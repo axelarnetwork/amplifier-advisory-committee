@@ -33,7 +33,7 @@ The Committee’s assessment methodology included the following:
 
 The assessment framework focused on the following key areas:
 
-- **Protocol Integrity**: Evaluating Sui’s consensus mechanism (Narwhal and Tusk), validator decentralization, and the scalability of its DAG-based architecture.
+- **Protocol Integrity**: Evaluating Sui’s consensus mechanism ([Mysticeti](https://arxiv.org/pdf/2310.14821)), validator decentralization, and the scalability of its DAG-based architecture.
 - **Security Risks**: Identifying vulnerabilities within Sui’s Move VM, bridge components, and network infrastructure.
 - **Operational Risks**: Assessing challenges developers might face when integrating with Sui, such as stability, untested features, or constraints in the Move language.
 - **Compliance and Governance Risks**: Reviewing Sui’s governance model, community involvement, and regulatory considerations.
