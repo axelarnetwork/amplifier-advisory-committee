@@ -131,7 +131,7 @@ Summary of findings from Sui CGP audits (Reported-Fixed-Acknowledged):
 No audit report for [Sui Amplifier](https://github.com/axelarnetwork/axelar-amplifier/tree/main/ampd/src/sui) code was provided.
 
 ### 4.2 Understanding of Deployment and Maintenance Plans
-Deployment scripts for Sui Axelar components are provided, and the process is well documented in the [Axelar repository](https://github.com/axelarnetwork/axelar-contract-deployments/tree/main/sui#sui-deployment-scripts). The code is well-structured, and [Ackee](https://ackee.xyz/) did not identify any best practices violations in the development scripts.
+Deployment scripts for Sui Axelar components are provided, and the process is well documented in the [Axelar contract deployments repository](https://github.com/axelarnetwork/axelar-contract-deployments/tree/main/sui#sui-deployment-scripts). The code is well-structured, and [Ackee](https://ackee.xyz/) did not identify any best practices violations in the development scripts.
 
 ### 4.3 Mitigation of Potential Risks
 Sui and Axelar confirm that the system includes proper logging and mechanisms to resolve unusual situations in the network to avoid further damage to the network and users' funds. Sui performs continuous security monitoring and a proactive approach to vulnerability management.
@@ -139,11 +139,11 @@ Sui and Axelar confirm that the system includes proper logging and mechanisms to
 ---
 
 ## Conclusion 
-The Sui integration with Axelar Network presents a significant opportunity to expand interoperability and enable seamless cross-chain transactions for developers. The evaluation highlights Sui’s strengths, including its innovative Move-based programming model, object-based accounting system, and high transaction throughput enabled by Narwhal and Tusk consensus. Axelar’s integration components demonstrate strong adherence to best practices, with thorough audits and well-documented deployment plans.
+The Sui integration with Axelar Network presents a significant opportunity to expand interoperability and enable seamless cross-chain transactions for developers. The evaluation highlights Sui’s strengths, including its innovative Move-based programming model, object-based accounting system, and high transaction throughput enabled by Mysticeti consensus. Axelar’s integration components demonstrate strong adherence to best practices, with thorough audits and well-documented deployment plans.
 
 Despite these strengths, the assessment identified critical areas for improvement. Sui’s centralized governance, recent mainnet outage, and limited audits since 2023 raise concerns about network resilience and community engagement. Historical vulnerabilities, including denial-of-service (DoS) and transaction validation bugs, emphasize the need for robust security mechanisms. The complexity of Sui’s architecture and reliance on validator coordination in high-load scenarios necessitate enhanced fault tolerance and operational readiness.
 
-The integration offers Sui developers access to broader liquidity pools and interoperable dApps, fostering innovation across the ecosystem. To realize these benefits, addressing security risks, decentralization challenges, and governance gaps will be critical. By implementing proactive measures such as expanded audits, improved disaster recovery plans, and decentralized decision-making, Sui can solidify its position as a secure and scalable blockchain within the Axelar Network ecosystem.
+The integration offers Sui developers access to broader liquidity pools and interoperable dApps, fostering innovation across the ecosystem. To realize these benefits, addressing security risks, decentralization challenges, and governance gaps will be critical. By implementing proactive measures such as expanded audits and bug bounty programs, improved disaster recovery plans, and decentralized decision-making, Sui can solidify its position as a secure and scalable blockchain within the Axelar Network ecosystem.
 
 ---
 
