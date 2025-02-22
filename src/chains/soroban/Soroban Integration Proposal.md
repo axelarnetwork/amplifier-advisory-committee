@@ -74,7 +74,7 @@ Integrating Soroban with Axelar includes the following components:
 - **Security Modules:** Ensuring integrity and safety of data.
 
 For reference, Axelar integration components are available here:  
-[https://github.com/axelarnetwork/axelar-cgp-soroban](https://github.com/axelarnetwork/axelar-cgp-soroban)
+[https://github.com/axelarnetwork/axelar-cgp-stellar](https://github.com/axelarnetwork/axelar-cgp-stellar)
 
 ---
 
@@ -89,7 +89,9 @@ The purpose of this review is to ensure that the integration of Soroban with Axe
 - **GitHub Repository:** [https://github.com/stellar/soroban](https://github.com/stellar/soroban)
 - **Documentation:** [https://soroban.stellar.org/docs](https://soroban.stellar.org/docs)
 - **Whitepaper:** [https://soroban.stellar.org/whitepaper](https://soroban.stellar.org/whitepaper)
-- **Audit Reports:** [https://stellar.org/security](https://stellar.org/security)
+- **Stellar Audit Reports:** [https://stellar.org/security](https://stellar.org/security)
+- **Soroban FYEO Audit Report:** [https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf](https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf)
+- There is an ongoing audit conducted by the Ottersec team | Feb 24 - Mar 7 2025
 
 ---
 
