@@ -73,7 +73,7 @@ Integrating Soroban with Axelar includes the following components:
 - **Gas Service Contracts:** Handling fees for cross-chain transactions.
 - **Security Modules:** Ensuring integrity and safety of data.
 
-For reference, Axelar integration components are available here:  
+Axelar integration components are available here:  
 [https://github.com/axelarnetwork/axelar-cgp-stellar](https://github.com/axelarnetwork/axelar-cgp-stellar)
 
 ---
