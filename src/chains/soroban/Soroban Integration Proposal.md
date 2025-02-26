@@ -1,7 +1,6 @@
 # Chain Integration Proposal
 
-
-Integrating Soroban with the Axelar network will unlock new capabilities for decentralized applications (dApps) by enabling seamless cross-chain interoperability, enhanced scalability, and robust security. This partnership aims to leverage Soroban’s efficient WASM-based smart contract platform and Stellar’s infrastructure to provide a foundation for innovative use cases in decentralized finance (DeFi), tokenized assets, and cross-border payments. Key milestones include developing gateway contracts, ensuring compatibility with Axelar’s network, and securing cross-chain communications.
+Integrating Soroban with the Axelar network will unlock new capabilities for decentralized applications (dApps) by enabling seamless cross-chain interoperability, enhanced scalability, and robust security. This partnership aims to leverage Soroban’s efficient WASM-based smart contract platform and Stellar’s infrastructure to provide a foundation for innovative use cases in decentralized finance (DeFi), tokenized assets, and cross-border payments. 
 
 ---
 
@@ -14,13 +13,12 @@ Integrating Soroban with the Axelar network will unlock new capabilities for dec
 **Project Description:**  
 Soroban is a smart contract platform built on the Stellar blockchain, designed to power decentralized applications (dApps) with a focus on simplicity, performance, and trustworthiness. Leveraging Stellar’s fast and efficient transaction protocol, Soroban introduces robust features for developers to build and deploy scalable, secure, and low-latency applications. Its integration with Stellar’s existing infrastructure ensures seamless functionality for financial and enterprise use cases.
 
-**Proposer:** Stellar Development Foundation (SDF)
+**Proposer:** Interop Labs (on behalf of Stellar Development Foundation)
 
 **Contact Information:**
-- **Email:** [contact@stellar.org](mailto:contact@stellar.org)
-- **Slack:** In Axelar’s Integrator Slack channel tag [TBD]
-- **Discord:** [https://discord.com/invite/stellar](https://discord.com/invite/stellar)
-- **Website:** [https://stellar.org](https://stellar.org)
+- **Slack:** In Axelar’s Integrator Slack channel | [Internal only]
+- **Stellar Website:** [https://stellar.org](https://stellar.org)
+- **Axelar Website:** [https://www.axelar.network/](https://www.axelar.network/)
 
 ---
 
@@ -29,7 +27,7 @@ Soroban is a smart contract platform built on the Stellar blockchain, designed t
 ### At-A-Glance
 
 **Justification for Soroban:**  
-Integrating Soroban with the Axelar network will significantly enhance interoperability across blockchain ecosystems by enabling seamless cross-chain communication and asset transfer capabilities. Soroban’s efficient smart contract platform, combined with Axelar’s secure and scalable infrastructure, will provide developers and users with new opportunities for decentralized finance (DeFi), asset tokenization, and enterprise blockchain solutions. This integration will allow Stellar’s ecosystem to expand its functionality, gain access to broader liquidity, and facilitate interactions with other blockchains.  
+Integrating Soroban with the Axelar network will significantly enhance interoperability across blockchain ecosystems by enabling seamless cross-chain communication and asset transfer capabilities. Soroban’s efficient smart contract platform, combined with Axelar’s secure and scalable infrastructure, will provide developers and users with new opportunities for decentralized finance (DeFi), asset tokenization, and enterprise blockchain solutions. This integration will allow Stellar’s ecosystem to expand its functionality, gain access to broader liquidity, and facilitate interactions with other blockchains.
 
 **Management Team Credentials:**  
 Soroban is developed and maintained by the Stellar Development Foundation (SDF), a nonprofit organization with years of experience supporting the Stellar network. SDF’s leadership includes blockchain experts and seasoned professionals committed to fostering financial inclusion and innovation:
@@ -42,6 +40,9 @@ Soroban is developed and maintained by the Stellar Development Foundation (SDF),
 
 ### Notable Use Cases
 
+- **MoneyGram International:** [Global leader in cross-border payments and remittances](https://www.moneygram.com), leveraging Stellar for digital asset transactions and financial inclusion.
+- **Circle's USDC:** [A stablecoin issued on Stellar](https://www.circle.com/usdc), facilitating fast, scalable, and cost-effective digital transactions for businesses and individuals.
+- **Flutterwave:** [A leading African payments company](https://www.flutterwave.com) utilizing Stellar for seamless cross-border payments and financial access.
 - **Stellar Asset Bridge:** [Enabling seamless tokenized asset transfers](https://www.stellar.org) between Stellar and other blockchain ecosystems.
 - **Pendulum:** [A blockchain solution](https://pendulumchain.org) enhancing DeFi functionality with stablecoin liquidity pools and cross-border transactions.
 - **Solar Wallet:** [An intuitive wallet](https://solarwallet.io) for accessing dApps, managing assets, and seamless Soroban integration.
@@ -68,13 +69,13 @@ Soroban is a WebAssembly (WASM)-based smart contract platform leveraging Stellar
 **Amplifier and External Contracts**  
 Integrating Soroban with Axelar includes the following components:
 
-- **Gateway Contracts:** Secure routing of messages and assets.
-- **Relayers:** Efficient cross-chain message delivery.
-- **Gas Service Contracts:** Handling fees for cross-chain transactions.
-- **Security Modules:** Ensuring integrity and safety of data.
-
-Axelar integration components are available here:  
-[https://github.com/axelarnetwork/axelar-cgp-stellar](https://github.com/axelarnetwork/axelar-cgp-stellar)
+- **[Ampd](https://github.com/axelarnetwork/axelar-amplifier):** Responsible for voting and signing within the Axelar Amplifier protocol, ensuring secure and decentralized decision-making.
+- **[Gateway Contracts](https://github.com/axelarnetwork/axelar-cgp-stellar):** Securely route messages and assets between Stellar and other chains, acting as the trust-minimized entry and exit point for cross-chain transactions.
+- **[Gas Service Contracts](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/gas-service):** Manage and collect fees required for cross-chain transactions, ensuring seamless user experience by abstracting gas payments.
+- **[Relayers](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/relayer):** Responsible for submitting transactions and facilitating message delivery across chains, including Stellar.
+- **[Multisig Prover](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/multisig-prover):** A CosmWasm-based component used for verifying cross-chain messages with a decentralized threshold signature scheme.
+- **[Governance Contracts](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/governance):** Allow for proposal creation, execution, and cancellation, enabling on-chain governance decisions that affect cross-chain interactions.
+- **[ITS Contracts](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/its):** Allow users/developers to create their own token bridge (ITS integration will follow the completion of the ITS Hub in Phase 2).
 
 ---
 
@@ -82,21 +83,21 @@ Axelar integration components are available here:
 
 ### Purpose
 
-The purpose of this review is to ensure that the integration of Soroban with Axelar adheres to security and technical standards, enabling secure cross-chain interactions.
+The purpose of this review is to ensure that the integration of Soroban with Axelar adheres to security and technical standards, enabling secure cross-chain interactions. The Security Council review will be conducted by Axelar’s internal security team and external auditors such as Ottersec and FYEO.
 
 ### Additional Information
 
-- **GitHub Repository:** [https://github.com/stellar/soroban](https://github.com/stellar/soroban)
-- **Documentation:** [https://soroban.stellar.org/docs](https://soroban.stellar.org/docs)
-- **Whitepaper:** [https://soroban.stellar.org/whitepaper](https://soroban.stellar.org/whitepaper)
+- **Soroban GitHub Repository:** [https://github.com/stellar/soroban](https://github.com/stellar/soroban)
+- **Soroban Documentation:** [https://soroban.stellar.org/docs](https://soroban.stellar.org/docs)
+- **Soroban Whitepaper:** [https://soroban.stellar.org/whitepaper](https://soroban.stellar.org/whitepaper)
 - **Stellar Audit Reports:** [https://stellar.org/security](https://stellar.org/security)
-- **Soroban FYEO Audit Report:** [https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf](https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf)
-- There is an ongoing audit conducted by the Ottersec team | Feb 24 - Mar 7 2025
+- **Axelar Integration of Soroban (FYEO):** [https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf](https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf)
+- **Axelar Integration of Soroban (Ottersec):** *Pending publication*
 
 ---
 
 ## Feedback and Questions
 
-For questions or feedback, please contact the Stellar Development Foundation:  
-- **Email:** [contact@stellar.org](mailto:contact@stellar.org)  
-- **Discord:** [https://discord.com/invite/stellar](https://discord.com/invite/stellar)
+For questions or feedback about this integration, please reach out to the Interop Labs team:  
+- **Technical Inquiry Form:** [https://www.axelar.network/delegation-guidelines](https://www.axelar.network/delegation-guidelines)
+- **Discord:** [https://discord.com/invite/axelarnetwork](https://discord.com/invite/aRZ3Ra6f7D)
