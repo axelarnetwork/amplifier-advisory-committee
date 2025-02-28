@@ -80,11 +80,11 @@ Integrating Soroban with Axelar includes the following components:
 
 ---
 
-## Request for Security Council Review
+## Request for Amplifier Committee Review
 
 ### Purpose
 
-The purpose of this review is to ensure that the integration of Soroban with Axelar adheres to security and technical standards, enabling secure cross-chain interactions. The Security Council review will be conducted by Axelar’s internal security team and external auditors such as Ottersec and FYEO.
+The purpose of this review is to ensure that the integration of Soroban with Axelar adheres to security and technical standards, enabling secure cross-chain interactions.
 
 ### Additional Information
 
