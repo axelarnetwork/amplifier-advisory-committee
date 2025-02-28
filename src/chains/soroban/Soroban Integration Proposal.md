@@ -16,7 +16,7 @@ Soroban is a smart contract platform built on the Stellar blockchain, designed t
 **Proposer:** Interop Labs (on behalf of Stellar Development Foundation)
 
 **Contact Information:**
-- **Slack:** In Axelar’s Integrator Slack channel | [Internal only]
+- **Slack:** Confidential
 - **Stellar Website:** [https://stellar.org](https://stellar.org)
 - **Axelar Website:** [https://www.axelar.network/](https://www.axelar.network/)
 
@@ -74,8 +74,8 @@ Integrating Soroban with Axelar includes the following components:
 - **[Gas Service Contracts](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/gas-service):** Manage and collect fees required for cross-chain transactions, ensuring seamless user experience by abstracting gas payments.
 - **[Relayers](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/relayer):** Responsible for submitting transactions and facilitating message delivery across chains, including Stellar.
 - **[Multisig Prover](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/multisig-prover):** A CosmWasm-based component used for verifying cross-chain messages with a decentralized threshold signature scheme.
-- **[Governance Contracts](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/governance):** Allow for proposal creation, execution, and cancellation, enabling on-chain governance decisions that affect cross-chain interactions.
-- **[ITS Contracts](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/its):** Allow users/developers to create their own token bridge (ITS integration will follow the completion of the ITS Hub in Phase 2).
+- **[Governance Contracts](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/governance):** Allow for proposal creation, execution, and cancellation, enabling on-chain governance decisions that affect cross-chain interactions. (Stellar ITS will be supported at initial launch of the Soroban integration.)
+
 
 ---
 
@@ -94,6 +94,13 @@ The purpose of this review is to ensure that the integration of Soroban with Axe
 - **Axelar Integration of Soroban (FYEO):** [https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf](https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf)
 - **Axelar Integration of Soroban (Ottersec):** *Pending publication*
 
+**Additional Audit Links**
+- [Audit of Axelar Amplifier (2024-08 Code4rena)](https://code4rena.com/reports/2024-08-axelar-network)
+- [Audit of Axelar Amplifier Gateway (2024-07Ackee)](https://github.com/axelarnetwork/audits/blob/main/audits/2024-07%20Ackee%20Blockchain.pdf)
+- [Audit of Axelar Amplifier Gateway (2024-06 NCC)](https://github.com/axelarnetwork/audits/blob/main/audits/2024-06%20NCC.pdf)
+- [Audit of Axelar Amplifier (Halborn)](https://github.com/axelarnetwork/audits/blob/main/audits/2024-05%20Halborn.pdf)
+- [Audit of Axelar Amplifier Gateway (2024-04Ackee)](https://github.com/axelarnetwork/audits/blob/main/audits/2024-04%20Ackee%20Blockchain.pdf)
+- [Audit of Axelar Amplifier (2024-03 NCC)](https://github.com/axelarnetwork/audits/2024-03%20NCC.pdf])
 ---
 
 ## Feedback and Questions
