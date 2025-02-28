@@ -40,14 +40,13 @@ Soroban is developed and maintained by the Stellar Development Foundation (SDF),
 
 ### Notable Use Cases
 
-- **MoneyGram International:** [Global leader in cross-border payments and remittances](https://www.moneygram.com), leveraging Stellar for digital asset transactions and financial inclusion.
-- **Circle's USDC:** [A stablecoin issued on Stellar](https://www.circle.com/usdc), facilitating fast, scalable, and cost-effective digital transactions for businesses and individuals.
-- **Flutterwave:** [A leading African payments company](https://www.flutterwave.com) utilizing Stellar for seamless cross-border payments and financial access.
-- **Stellar Asset Bridge:** [Enabling seamless tokenized asset transfers](https://www.stellar.org) between Stellar and other blockchain ecosystems.
-- **Pendulum:** [A blockchain solution](https://pendulumchain.org) enhancing DeFi functionality with stablecoin liquidity pools and cross-border transactions.
+- **MoneyGram International:** [Global leader in cross-border payments and remittances](https://stellar.org/products-and-tools/moneygram), leveraging Stellar for digital asset transactions and financial inclusion.
+- **Circle's USDC:** [A stablecoin issued on Stellar](https://stellar.org/products-and-tools/circle-usdc-eurc), facilitating fast, scalable, and cost-effective digital transactions for businesses and individuals.
+- **Flutterwave:** [A leading African payments company](hhttps://stellar.org/press/flutterwave-enables-new-europe-africa-payment-corridors-via-stellar) utilizing Stellar for seamless cross-border payments and financial access.
+- **Allbridge:** [Enabling seamless tokenized asset transfers](https://stellar.org/press/allbridge-launch-connects-stellar-network-to-ethereum-solana-and-polygon) between Stellar Network, Ethereum, Solana, Celo, and Polygon.
+- **Starbridge:** [A blockchain solution](https://stellar.org/blog/developers/starbridge-a-trust-minimized-bridge-between-stellar-and-other-blockchains) allowing transfer of local assets and wrapped assets to facilitate symmetrical bidirectional capabilities.
 - **Solar Wallet:** [An intuitive wallet](https://solarwallet.io) for accessing dApps, managing assets, and seamless Soroban integration.
 - **Lightnet Group:** [A financial infrastructure](https://lightnet.io) for remittances and cross-border payments.
-
 ---
 
 ## Technology Overview
