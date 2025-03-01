@@ -1,0 +1,47 @@
+name: Create Asana Tasks for Chain Proposal
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  create_asana_tasks:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract Chain Name
+        id: extract_chain
+        run: echo "CHAIN_NAME=$(echo '${{ github.event.pull_request.title }}' | sed -E 's/\[Proposal\] (.*)/\1/')" >> $GITHUB_ENV
+
+      - name: Create Asana Task
+        env:
+          ASANA_ACCESS_TOKEN: ${{ secrets.ASANA_ACCESS_TOKEN }}
+          ASANA_PROJECT_ID: ${{ secrets.ASANA_PROJECT_ID }}
+        run: |
+          curl -X POST "https://app.asana.com/api/1.0/tasks" \
+          -H "Authorization: Bearer $ASANA_ACCESS_TOKEN" \
+          -H "Content-Type: application/json" \
+          -d '{
+                "data": {
+                  "name": "'"$CHAIN_NAME"' - Review",
+                  "projects": ["'"$ASANA_PROJECT_ID"'"]
+                }
+              }'
+
+          TASK_ID=$(curl -s -X GET "https://app.asana.com/api/1.0/projects/$ASANA_PROJECT_ID/tasks?opt_fields=name,gid" \
+            -H "Authorization: Bearer $ASANA_ACCESS_TOKEN" | jq -r '.data[] | select(.name=="'"$CHAIN_NAME"' - Review") | .gid')
+
+          for subtask in "Opt-in Poll" "Work Assignment" "Grant Distribution" "Report Review" "Report Final Review + Vote" "Report Publication"
+          do
+            curl -X POST "https://app.asana.com/api/1.0/tasks" \
+            -H "Authorization: Bearer $ASANA_ACCESS_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{
+                  "data": {
+                    "name": "'"$CHAIN_NAME"' - '"$subtask"'",
+                    "parent": "'"$TASK_ID"'",
+                    "projects": ["'"$ASANA_PROJECT_ID"'"]
+                  }
+                }'
+          done
