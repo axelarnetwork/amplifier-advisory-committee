@@ -88,11 +88,10 @@ The purpose of this review is to ensure that the integration of Soroban with Axe
 
 ### Additional Information
 
-- **Soroban GitHub Repository:** [https://github.com/stellar/soroban](https://github.com/stellar/soroban)
-- **Soroban Documentation:** [https://soroban.stellar.org/docs](https://developers.stellar.org/)
-
-- **Soroban Whitepaper:** [https://soroban.stellar.org/whitepaper](https://soroban.stellar.org/whitepaper)
-- **Stellar Audit Reports:** [https://stellar.org/security](https://stellar.org/security)
+- **Stellar Protocol GitHub Repository:** [https://github.com/stellar/stellar-protocol](https://github.com/stellar/stellar-protocol)
+- **Stellar Developer Documentation:** [https://developers.stellar.org](https://developers.stellar.org)
+- **Stellar Protocol Authorization Framework:** [https://github.com/stellar/stellar-protocol/blob/master/core/cap-0046-11.md](https://github.com/stellar/stellar-protocol/blob/master/core/cap-0046-11.md)
+- **Veridise Stellar Soroban Core Audit Report:** [Stellar Soroban Core 2024]([https://stellar.org/security](https://veridise.com/wp-content/uploads/2024/11/VAR_Stellar_Soroban-5.pdf))
 - **Axelar Integration of Soroban (FYEO):** [https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf](https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf)
 - **Axelar Integration of Soroban (Ottersec):** *Pending publication*
 
