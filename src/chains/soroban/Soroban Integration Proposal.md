@@ -89,7 +89,8 @@ The purpose of this review is to ensure that the integration of Soroban with Axe
 ### Additional Information
 
 - **Soroban GitHub Repository:** [https://github.com/stellar/soroban](https://github.com/stellar/soroban)
-- **Soroban Documentation:** [https://soroban.stellar.org/docs](https://soroban.stellar.org/docs)
+- **Soroban Documentation:** [https://soroban.stellar.org/docs](https://developers.stellar.org/)
+
 - **Soroban Whitepaper:** [https://soroban.stellar.org/whitepaper](https://soroban.stellar.org/whitepaper)
 - **Stellar Audit Reports:** [https://stellar.org/security](https://stellar.org/security)
 - **Axelar Integration of Soroban (FYEO):** [https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf](https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf)
