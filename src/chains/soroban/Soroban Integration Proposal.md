@@ -102,7 +102,8 @@ The purpose of this review is to ensure that the integration of Soroban with Axe
 - [Audit of Axelar Amplifier Gateway (2024-06 NCC)](https://github.com/axelarnetwork/audits/blob/main/audits/2024-06%20NCC.pdf)
 - [Audit of Axelar Amplifier (Halborn)](https://github.com/axelarnetwork/audits/blob/main/audits/2024-05%20Halborn.pdf)
 - [Audit of Axelar Amplifier Gateway (2024-04Ackee)](https://github.com/axelarnetwork/audits/blob/main/audits/2024-04%20Ackee%20Blockchain.pdf)
-- [Audit of Axelar Amplifier (2024-03 NCC)](https://github.com/axelarnetwork/audits/2024-03%20NCC.pdf])
+- [Audit of Axelar Amplifier (2024-03 NCC)](https://github.com/axelarnetwork/audits/2024-03%20NCC.pdf)
+
 
 ---
 
