@@ -74,9 +74,9 @@ Integrating Soroban with Axelar includes the following components:
 - **[Ampd](https://github.com/axelarnetwork/axelar-amplifier):** Responsible for voting and signing within the Axelar Amplifier protocol, ensuring secure and decentralized decision-making.
 - **[Gateway Contracts](https://github.com/axelarnetwork/axelar-cgp-stellar):** Securely route messages and assets between Stellar and other chains, acting as the trust-minimized entry and exit point for cross-chain transactions.
 - **[Gas Service Contracts](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/gas-service):** Manage and collect fees required for cross-chain transactions, ensuring seamless user experience by abstracting gas payments.
-- **[Relayers](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/relayer):** Responsible for submitting transactions and facilitating message delivery across chains, including Stellar.
-- **[Multisig Prover](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/multisig-prover):** A CosmWasm-based component used for verifying cross-chain messages with a decentralized threshold signature scheme.
-- **[Governance Contracts](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/governance):** Allow for proposal creation, execution, and cancellation, enabling on-chain governance decisions that affect cross-chain interactions. (Stellar ITS will be supported at initial launch of the Soroban integration.)
+- **[Relayers]:** Responsible for submitting transactions and facilitating message delivery across chains, including Stellar.
+- **[Multisig Prover](https://github.com/axelarnetwork/axelar-amplifier/tree/main/external-gateways/stellar):** A CosmWasm-based component used for verifying cross-chain messages with a decentralized threshold signature scheme.
+- **[Interchain Token Service Contract](https://github.com/axelarnetwork/axelar-cgp-stellar/tree/main/contracts/stellar-interchain-token-service):** Enables seamless bridging of tokens between Stellar and other supported blockchains.
 
 ---
 
