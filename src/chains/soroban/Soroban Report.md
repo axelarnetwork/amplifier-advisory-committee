@@ -28,18 +28,30 @@ This integration will allow Stellar developers to access liquidity pools, decent
 
 The **Amplifier Advisory Committee** conducted a **comprehensive assessment** of Stellar's integration, which included:  
 
-- **Technical Documentation Review**: Examined Soroban’s developer documentation, smart contract execution model, and network specifications.  
-- **Source Code Examination**: Reviewed relevant Stellar integration code for security, efficiency, and alignment with Axelar’s GMP framework.  
-- **Security Audit Reports**: Assessed existing audit reports on Soroban’s execution environment, validator network, and known vulnerabilities.  
-- **Risk Analysis**: Identified key risks related to Soroban’s smart contract execution, network reliability, and security considerations.  
-- **Integration Testing**: Planned interoperability testing to validate Soroban’s compatibility with Axelar.  
+- **Research and Documentation Review**: A detailed review of technical documentation, Stellar's GitHub repositories, and Axelar's Github repositories to understand the Stellar network’s capabilities and integration requirements.
+- **Security Audits and Testing**: Examination of Stellar's codebase, previously conducted audits, and tests for vulnerabilities. This included reviewing best practices for wasm smart contracts.
 
-The **Amplifier Advisory Committee** oversees and reviews the integration, ensuring it meets security and performance benchmarks. The committee plays a key role in approving technical milestones, deployment phases, and final mainnet readiness.  
+### 1.3 Assessment Framework
 
-#### **Approval Process**  
-- The committee evaluates integration milestones before deployment.  
-- A **majority vote** is required for **mainnet launch approval**.  
-- Security audits and technical assessments must be completed before final approval.  
+The assessment framework focused on the following key areas:
+
+- **Protocol Integrity**: 
+- **Security Risks**: 
+- **Operational Risks**: 
+- **Compliance and Governance Risks**: 
+- **Code Quality and Transparency**: 
+- **Integration Plan**:
+
+### 1.4 Assessment Criteria
+
+The desirable properties related to Sui’s architecture and its integration with Axelar included:
+
+- **Security**: 
+- **Scalability and Performance**: 
+- **Decentralization**: 
+- **Governance**: 
+- **Fault Tolerance**: 
+- **Transparency**: 
 
 ---  
 
