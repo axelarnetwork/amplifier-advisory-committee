@@ -45,10 +45,11 @@
 
 ### Axelar Integration Components
 
-- **External Gateway Contract:** the External Gateway Contract will be implemented within Solana's native environment and optimized for the network's performance characteristics, allowing seamless cross-chain messaging and asset bridging.
-- **Amplifier Contracts:** The Amplifier contracts will follow Axelar's established integration patterns with appropriate adaptations for Solana's programming model. These contracts will handle routing and validation of interchain messages to and from Solana, ensuring secure communication between networks.
-- **ITS Contracts:** Interchain Token Service (ITS) contracts will be adapted to support SPL token transfers, enabling cross-chain assets to be issued and redeemed on Solana with minimal friction.
-- **Governance Contract:** The governance module allows decisions taken on the Axelar network to be propagated and executed on the different integrated chains, giving a chance (by timelock) to each chain maintainer to prepare for its execution. So the governance module acts as an "approved proposal's forwarder" which is connected to the Axelar governance infrastructure via GMP messages.
+- **[External Gateway Contract:](https://github.com/eigerco/solana-axelar/tree/main/solana/programs/axelar-solana-gateway)** the External Gateway Contract will be implemented within Solana's native environment and optimized for the network's performance characteristics, allowing seamless cross-chain messaging and asset bridging.
+- **Amplifier Contracts:** The Amplifier contracts will follow Axelar's established integration patterns with appropriate adaptations for Solana's programming model. These contracts will handle routing and validation of interchain messages to and from Solana, ensuring secure communication between networks. (*links to be added*)
+- **[ITS Contract:](https://github.com/eigerco/solana-axelar/tree/main/solana/programs/axelar-solana-its)** The Interchain Token Service (ITS) contracts will be adapted to support SPL token transfers, enabling cross-chain assets to be issued and redeemed on Solana with minimal friction.
+- **[Governance Contract:](https://github.com/eigerco/solana-axelar/tree/main/solana/programs/axelar-solana-governance)** The governance module allows decisions taken on the Axelar network to be propagated and executed on the different integrated chains, giving a chance (by timelock) to each chain maintainer to prepare for its execution. So the governance module acts as an "approved proposal's forwarder" which is connected to the Axelar governance infrastructure via GMP messages.
+- **[Gas Service Contract:](https://github.com/eigerco/solana-axelar/tree/main/solana/programs/axelar-solana-gas-service)** Manages and collect fees required for cross-chain transactions, ensuring seamless user experience by abstracting gas payments.
 
 ## Request for the Amplifier Advisory Committee Review
 
