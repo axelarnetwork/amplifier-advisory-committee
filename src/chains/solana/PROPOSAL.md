@@ -62,6 +62,8 @@ The purpose of this review is to ensure that the integration of Solana with the 
 - **Developer Documentation:** https://solana.com/docs
 - **Whitepaper:** https://solana.com/solana-whitepaper.pdf
 - **Independent Audit Reports:** https://github.com/anza-xyz/security-audits
+- **Independent Audit Reports of Axelar Integration of Solana:**
+  - [FYEO v1.0](https://github.com/fyeo-io/public-audit-reports/blob/main/Code%20Audit%20Reports/2025/Axelar/Axelar%20Foundation%20-%20Security%20Code%20Review%20of%20Axelar%20-%20Solana%20Integration%20v1.0.pdf)
 
 ## Community Involvement
 
