@@ -154,7 +154,7 @@ Summary of findings from Stellar CGP audits (Reported-Fixed-Acknowledged):
 | **FYEO 1/25**      |          |       |        | 3-2-1 | 4-0-4 |
 | **Ottersec TBD**   |          |       |        |       |       |
 
-[Ackee](https://ackee.xyz/) performed a cross-check of audit reports and confirmed that from 7 findings reported by FYEO were 2 remediated and 5 acknowledged. The Ottersec audit was not published during the integration report writing.
+[Ackee](https://ackee.xyz/) performed a cross-check of audit reports and confirmed that from 7 findings reported by FYEO, 2 were remediated and 5 acknowledged. The Ottersec audit was not published during the integration report writing.
 
 No audit report for [Axelar Amplifier / External Gateways / Stellar](https://github.com/axelarnetwork/axelar-amplifier/tree/main/external-gateways/stellar) code was provided.
 
