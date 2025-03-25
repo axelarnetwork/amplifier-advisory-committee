@@ -76,7 +76,7 @@ The **CAP process** governs **technical upgrades and network changes**:
 
 
 
-1. **Pre-CAP (Initial Discussion)** – Any community member can propose an idea via the **stellar-dev mailing list** for feedback.
+1. **Pre-CAP (Initial Discussion)** – Any community member can propose an idea via the [**stellar-dev mailing list**](https://groups.google.com/g/stellar-dev) for feedback.
 2. **Drafting a CAP** – Anyone can draft a **formal proposal** using the **CAP Template** and submit it as a **GitHub pull request**.
 3. **CAP Core Team Review** – The **CAP Core team (members from SDF, including Nicolas, Jed, and David)** reviews and refines the proposal.
 4. **CAP Core Team Vote** – The **CAP Core team must unanimously approve** the proposal before implementation begins.
