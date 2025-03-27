@@ -1,3 +1,60 @@
+# **Soroban Integration Report**
+
+## **Project Overview**
+
+- **Chain Name**: Stellar Soroban (Stellar Smart Contracts)  
+- **Proposal Reviewed**: [Soroban Integration Proposal]  
+- **Source Code**: [https://github.com/axelarnetwork/axelar-cgp-stellar]  
+
+### **Table of Contents**  
+- [Section 1: Assessment Methodology](#section-1-assessment-methodology)  
+- [Section 2: Stellar Network and Protocol Integrity](#section-2-stellar-network-and-protocol-integrity)  
+- [Section 3: Security and Risks](#section-3-stellar-security-and-risks)  
+- [Section 4: Axelar Integration Components](#section-4-axelar-integration-components)  
+- [Section 5: Committee Members](#section-5-committee-members)  
+- [Conclusion](#conclusion)  
+
+---  
+
+## **Section 1: Assessment Methodology**  
+
+### **1.1 Integration Overview**  
+
+The integration of **Stellar Soroban** with **Axelar** enables seamless cross-chain transactions and interoperability by leveraging Axelar's **General Message Passing (GMP)** and **security infrastructure**.  
+
+This integration will allow Stellar developers to access liquidity pools, decentralized applications (dApps), and cross-chain functionalities within the broader Web3 ecosystem. As Stellar’s smart contract platform, Soroban introduces **WASM-based smart contracts** and **Stellar’s scalability framework**, making it a strong candidate for interchain expansion.  
+
+### **1.2 Evaluation Approach**  
+
+The **Amplifier Advisory Committee** conducted a **comprehensive assessment** of Stellar's integration, which included:  
+
+- **Research and Documentation Review**: A detailed review of technical documentation, Stellar's GitHub repositories, and Axelar's Github repositories to understand the Stellar network’s capabilities and integration requirements.
+- **Security Audits and Testing**: Examination of Stellar's codebase, previously conducted audits, and tests for vulnerabilities. This included reviewing best practices for wasm smart contracts.
+
+### 1.3 Assessment Framework
+
+The assessment framework focused on the following key areas:
+
+- **Protocol Integrity**: Evaluating Stellar Consensus Protocol's mechanism and validator decentralization.
+- **Security Risks**: Identifying the security assurances of Soroban and historical security events of the Stellar blockchain.
+- **Operational Risks**: Assessing challenges developers may face with Soroban, such as features and constraints, and the existence of tools that can help implement secure smart contracts.
+- **Compliance and Governance Risks**: Reviewing Stellar's governance model, community proposals, funding, and regulatory considerations.
+- **Code Quality and Transparency**: Assessing the state of Stellar's codebase, audit results, and adherence to development best practices.
+- **Integration Plan**: Reviewing deployment and maintenance strategies of the components involved in the Axelar-Soroban integration, including auditing and threat detection mechanisms.
+
+### 1.4 Assessment Criteria
+
+The desirable properties related to Sui’s architecture and its integration with Axelar included:
+
+- **Security**: How Stellar's consensus and Soroban-based contracts safeguard against exploits.
+- **Scalability and Performance**: Stellar's settlement time and transaction throughput and fees.
+- **Decentralization**: The quality of Stellar's distribution of validators and its potential impact on the system's security.
+- **Governance**: The mechanisms for community inclusion, protocol and application upgrades, distribution of funding, and regulatory considerations.
+- **Fault Tolerance**: Stellar's tolerance to validator faults, its ability to recover from network outages and their effect on the system's integrity.
+- **Transparency**: Open-source availability of the codebase, audit reports, and developer documentation.
+
+---  
+
 ## **Section 2: Network and Protocol Integrity**
 
 
