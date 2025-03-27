@@ -310,7 +310,8 @@ contracts.
 
 ---  
 
-## **Section 4: Axelar Integration Components **
+## **Section 4: Axelar Integration Components**
+
 ### 4.1 Code Quality and Transparency
 Interop Labs was responsible for developing the Soroban external contracts. [Axelar Amplifier Stellar](https://github.com/axelarnetwork/axelar-amplifier-stellar) is the Axelar Cross-chain Gateway Protocol implementation developed in Rust programming language. The codebase contains the following components:
 
@@ -343,6 +344,8 @@ Deployment scripts for Stellar Axelar components are provided, and the process i
 ### 4.3 Mitigation of Potential Risks
 Stellar and Axelar confirm that the system includes proper logging and mechanisms to effectively handle unusual situations in the network.
 
+---
+
 ## **Section 5: Committee Members**
 
 The **Amplifier Advisory Committee** overseeing this integration consists of the following teams:
@@ -352,3 +355,34 @@ The **Amplifier Advisory Committee** overseeing this integration consists of the
 - **Common Prefix**: Nikolaos Kamarinakis, Contributor; Dimitris Karakostas, Contributor
 - **Ackee**: Stepan Sonsky, Contributor
 - **Eiger**: Marcin, Contributor
+
+---
+
+## **Conclusion**
+
+The integration of Stellar Soroban with Axelar Network presents an opportunity to
+enable seamless cross-chain transactions and enhance interoperability. The
+evaluation highlights Stellar's strengths, including transaction speed,
+integration with existing financial institutions, and structured governance
+model. The existence of formal verification tools for Soroban allows the
+development of high assurance smart contracts. Additionally, Axelar's
+integration demonstrates good structure, proper logging mechanisms, and overall
+adherence to best practices.
+
+Nonetheless, the assessment identified critical areas for consideration and
+improvement. Stellar's network is rather centralized, in terms of both its
+validator distribution and diversity of the core protocol's software
+development. Historical vulnerabilities, including network outages and
+misconfiguration of core validator nodes, highlight the need for security
+assurances via robust mechanisms. The system is also highly reliant on the
+Stellar Development Foundation with respect to the consensus protocol's
+execution, governance, and funding opportunities. Additionally, the lack of
+audit of the Stellar codebase raises concerns for its robustness and adherence
+to the theoretical consensus protocol's description.
+
+The integration allows Stellar developers to tap into liquidity pools and
+decentralized applications across various systems. In order to reap these
+benefits, addressing the decentralization concerns and security gaps is
+essential. These can be addressed by proactive measures such as expanded code
+audits, decentralized decision-making, and expansion of the protocol's validator
+set, in order to make Stellar a major component of Axelar Network ecosystem.
