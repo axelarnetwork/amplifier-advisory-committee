@@ -129,6 +129,126 @@ Stellar has faced **regulatory scrutiny**, particularly regarding the classifica
 2. **Regulatory Uncertainty** – **Potential SEC enforcement** actions could impact **XLM’s status and exchange listings**.
 3. **Reliance on SDF** – The **Stellar Development Foundation** plays a central role in **governance, funding, and validator selection**.
 
+## Section 3: Security and Risks
+
+### Stellar Consensus Protocol
+
+The Stellar Consensus Protocol (SCP) has been rigorously defined and reviewed in
+academic conferences that include [ACM
+SOSP](https://dl.acm.org/doi/pdf/10.1145/3341301.3359636?casa_token=r5u8GKHBJboAAAAA:hmqRVOpUkUok5MFwZNCoqyngv_SxT1kZ82taV2rONWaBFlnmKeQWwjTLfsZtXnBRuyKaT7H5-LnH)
+and
+[OPODIS](https://drops.dagstuhl.de/storage/00lipics/lipics-vol153-opodis2019/LIPIcs.OPODIS.2019.5/LIPIcs.OPODIS.2019.5.pdf).
+Nonetheless, SCP's implementation in
+[stellar-core](https://github.com/stellar/stellar-core) may
+include optimizations or other differences from the theoretical abstractions
+which could require further review and validation.
+
+Notably, stellar-core has never been fully audited. Instead, the SDF runs a [bug
+bounty program](https://stellar.org/grants-and-funding/bug-bounty) on
+[immunefi](https://immunefi.com/bug-bounty/stellar/information/) and
+[hackerone](https://hackerone.com/stellar). This lack of full audits reduces the
+confidence in the implementation's security and resilience.
+
+### Stellar Network Security and Stability
+
+Stellar has seen two cases of outage in its 10+ year existence:
+
+- **15 May 2019**: The network [halted for 67
+  minutes](https://medium.com/stellar-developers-blog/may-15th-network-halt-a7b933103984)
+  due to inability to reach consensus. The identified cause was new nodes
+  (beyond the SDF-operated ones) taking too much consensus responsibility and,
+  by failing, causing the whole network's outage.
+- **April 2021**: The network [halted for 9
+  hours](https://status.stellar.org/incidents/7h0czw6mnjzs) on April 6, 2021.
+  The cause was some validators, including those run by the SDF, dropping offline
+  and causing an outage to the SDF Horizon service. As a result deposits and
+  withdrawals were halted some exchanges, including
+  [Bitfinex](https://cryptonary.com/the-stellar-blockchain-down-for-over-seven-hours/)
+  and
+  [Bitstamp](https://cryptobriefing.com/stellar-blockchain-faces-outage-some-validators-go-offline/).
+  The issue was fixed by [upgrading the network to Protocol
+  16](https://stellar.org/blog/developers/protocol-16-upgrade-guide).
+
+These instances highlight Stellar's prioritization of safety over liveness. In
+essence, a halt is preferable to a fork, so the security of funds and integrity
+of accounts is prioritized over the system's availability. However, they also
+showcase the reliance of the system's stability to the SDF and the risks that
+come from such centralization tendencies.
+
+### Stellar (de)centralization
+
+As of March 25, the Stellar network [consists of](https://stellarbeat.io): (i)
+183 connectable nodes; (ii) 88 validators; (iii) 74 full validators; (iv) 22
+organizations; (v) 23 top tier validators; (vi) 7 top tier organizations.
+These numbers make Stellar more centralized than competing Proof-of-Stake
+ledgers; for example, XRP has [954 nodes and 198
+validators](https://xrpscan.com/validators), Tezos has [294 validators
+("bakers")](https://tzstats.com/bakers), and Cardano has [2348 validators
+("pools")](https://cexplorer.io/pool).
+
+6 of the 7 top tier organizations (
+[Stellar Development Foundation](https://stellarbeat.io/organizations/266107f8966d45eedce41fee2581326d),
+[Blockdaemon Inc](https://stellarbeat.io/organizations/c1a16879b171bc6f0087f884acbea046),
+[SatoshiPay](https://stellarbeat.io/organizations/753e017d811e12c41ef03b5b4c51a1a5),
+[Franklin Templeton](https://stellarbeat.io/organizations/bc8b7a147ab684c37551a69369b70953),
+[Creit Technologies LLP](https://stellarbeat.io/organizations/a742187e2b2408eea2abad9d277f43aa),
+[Public Node](https://stellarbeat.io/organizations/2dd1cd0e5ba445846799c0d1114dda47))
+run 3 nodes each, as per the [documentation's
+recommentation](https://developers.stellar.org/docs/validators/tier-1-orgs),
+whereas the other
+([LOBSTR](https://stellarbeat.io/organizations/ad733706cebb901f8b8cbb1b6a9bb785))
+runs 5 nodes.
+
+9 (out of 23) top tier validators from 5 of the 7 organizations (SatoshiPay, Franklin
+Templeton, LOBSTR, Creit Technologies LLP, Public Node) demonstrate operation
+warnings regarding history archive verification (
+[SatoshiPay Iowa](https://stellarbeat.io/nodes/GAK6Z5UVGUVSEK6PEOCAYJISTT5EJBB34PN3NOLEQG2SUKXRVV2F6HZY),
+[FT SCV 1](https://stellarbeat.io/nodes/GARYGQ5F2IJEBCZJCBNPWNWVDOFK7IBOHLJKKSG2TMHDQKEEC6P4PE4V),
+[FT SCV 2](https://stellarbeat.io/nodes/GCMSM2VFZGRPTZKPH5OABHGH4F3AVS6XTNJXDGCZ3MKCOSUBH3FL6DOB),
+[FT SCV 3](https://stellarbeat.io/nodes/GA7DV63PBUUWNUFAF4GAZVXU2OZMYRATDLKTC7VTCG7AU4XUPN5VRX4A),
+[LOBSTR 1](https://stellarbeat.io/nodes/GCFONE23AB7Y6C5YZOMKUKGETPIAJA4QOYLS5VNS4JHBGKRZCPYHDLW7),
+[LOBSTR 4](https://stellarbeat.io/nodes/GA7TEPCBDQKI7JQLQ34ZURRMK44DVYCIGVXQQWNSWAEQR6KB4FMCBT7J),
+[LOBSTR 5](https://stellarbeat.io/nodes/GA5STBMV6QDXFDGD62MEHLLHZTPDI77U3PFOD2SELU5RJDHQWBR5NNK7),
+[Hercules by OG Technologies](https://stellarbeat.io/nodes/GBLJNN3AVZZPG2FYAYTYQKECNWTQYYUUY2KVFN2OUKZKBULXIXBZ4FCT))
+and running an outdated Stellar-core version
+([Alpha Node Validator](https://stellarbeat.io/nodes/GBPLJDBFZO2H7QQH7YFCH3HFT6EMC42Z2DNJ2QFROCKETAPY54V4DCZD)).
+These warnings are significant, since most organizations require agreement from
+them, Tier 1 organizations "bear the safety and
+liveness of the Stellar network on their shoulders". Notably, one of their
+validators' main responsibilities is publishing an archive of transactions in
+order to ["make the network more
+resilient"](https://developers.stellar.org/docs/validators/tier-1-orgs).
+
+All validators run the same software
+([stellar-core](https://github.com/stellar/stellar-core)], which highlights the
+extreme centralization of the software development process around Stellar's core
+protocol. Consequently, bugs in stellar-core can escalate to systemic risks and
+affect the entire Stellar network.
+
+### Soroban Security
+
+Soroban's core contracts were [audited by Veridise between October-December
+2023](https://veridise.com/wp-content/uploads/2024/11/VAR_Stellar_Soroban-5.pdf).
+The review discovered 8 issues, of which one was of medium severity (fixed).
+
+On March 2024 the SDF launched the [Soroban Security Audit
+Bank](https://stellar.org/blog/developers/the-soroban-audit-bank-fostering-a-secure-smart-contract-ecosystem),
+a program for funding security audits of Soroban-based projects. As of March
+2025 it is unclear how many audits and tools have received funding from this
+program.
+
+Various tools exist to assist Soroban smart contract developers to write secure
+contracts or formally verify their implementations. Among others, they include:
+
+- [CoinFabrik's Scout](https://github.com/CoinFabrik/scout-soroban);
+- [Certora's formal Wasm tool](https://www.certora.com/blog/formally-verifying-webassembly);
+- [OtterSec's stellar-verify](https://github.com/otter-sec/stellar-verify);
+- [Runtime Verification's Komet](https://docs.runtimeverification.com/komet).
+
+The existence of such tools enables the creation of high-assurance code and can
+help increase confidence in the security guarantees of Soroban-based smart
+contracts.
+
 ## Section 4: Axelar Integration Components 
 ### 4.1 Code Quality and Transparency
 Interop Labs was responsible for developing the Soroban external contracts. [Axelar Amplifier Stellar](https://github.com/axelarnetwork/axelar-amplifier-stellar) is the Axelar Cross-chain Gateway Protocol implementation developed in Rust programming language. The codebase contains the following components:
