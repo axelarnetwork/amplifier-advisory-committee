@@ -129,7 +129,9 @@ Stellar has faced **regulatory scrutiny**, particularly regarding the classifica
 2. **Regulatory Uncertainty** – **Potential SEC enforcement** actions could impact **XLM’s status and exchange listings**.
 3. **Reliance on SDF** – The **Stellar Development Foundation** plays a central role in **governance, funding, and validator selection**.
 
-## Section 3: Security and Risks
+---  
+
+## **Section 3: Security and Risks**
 
 ### Stellar Consensus Protocol
 
@@ -249,7 +251,9 @@ The existence of such tools enables the creation of high-assurance code and can
 help increase confidence in the security guarantees of Soroban-based smart
 contracts.
 
-## Section 4: Axelar Integration Components 
+---  
+
+## **Section 4: Axelar Integration Components **
 ### 4.1 Code Quality and Transparency
 Interop Labs was responsible for developing the Soroban external contracts. [Axelar Amplifier Stellar](https://github.com/axelarnetwork/axelar-amplifier-stellar) is the Axelar Cross-chain Gateway Protocol implementation developed in Rust programming language. The codebase contains the following components:
 
@@ -281,3 +285,13 @@ Deployment scripts for Stellar Axelar components are provided, and the process i
 
 ### 4.3 Mitigation of Potential Risks
 Stellar and Axelar confirm that the system includes proper logging and mechanisms to effectively handle unusual situations in the network.
+
+## **Section 5: Committee Members**
+
+The **Amplifier Advisory Committee** overseeing this integration consists of the following teams:
+
+- **Axelar**: Liana Spano, Coordinator
+- **Node.Monster**: Eyal Alsheich, Contributor
+- **Common Prefix**: Nikolaos Kamarinakis, Contributor; Dimitris Karakostas, Contributor
+- **Ackee**: Stepan Sonsky, Contributor
+- **Eiger**: Marcin, Contributor
