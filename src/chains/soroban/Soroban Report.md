@@ -65,11 +65,9 @@ Stellar is a **Layer-1 blockchain** designed for **cross-border payments, asset 
 
 #### **Consensus and Validation Model**
 
-Stellar’s **unique consensus mechanism** allows each node to select a trusted set of validators (**quorum slices**) to determine transaction validity. This **decentralized voting process** ensures fast finality while maintaining security.
+Stellar's conensus mechanism implements the notion of federated Byzantine Agreement (FBA). In FBA, each participant locally decides a set of participants (**quorum slice**) that it considers important, or trusted, and finalizes a transaction based on the agreement of the majority of the quorum slice. As a transaction gets finalized across different quorum slices, eventually the entire network deems it finalized, enabling a **decentralized voting process** that ensures fast finality while maintaining security. In this manner, the SCP enables decentralized control via flexible trust assumptions, which can be rooted in real-world interactions between the participants of the system, while also offering low latency and asymptotic security.
 
 There are **three types of Stellar Nodes**:
-
-
 
 * **Basic Validators** – Submit and validate transactions but do not publish historical data.
 * **Full Validators** – Submit transactions and store **historical snapshots of the ledger**.
