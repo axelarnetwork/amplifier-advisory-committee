@@ -2,14 +2,14 @@
 
 ## **Project Overview**
 
-- **Chain Name**: Stellar Soroban (Stellar Smart Contracts)  
-- **Proposal Reviewed**: [Soroban Integration Proposal]  
-- **Source Code**: [https://github.com/axelarnetwork/axelar-cgp-stellar]  
+- **Chain Name**: Stellar Soroban
+- **Proposal Reviewed**: [Soroban Integration Proposal](Soroban%20Integration%20Proposal.md)
+- **Source Code**: [axelar-cgp-stellar](https://github.com/axelarnetwork/axelar-cgp-stellar) & [axelar-amplifier/external-gateways/stellar](https://github.com/axelarnetwork/axelar-amplifier/tree/main/external-gateways/stellar)
 
 ### **Table of Contents**  
 - [Section 1: Assessment Methodology](#section-1-assessment-methodology)  
-- [Section 2: Stellar Network and Protocol Integrity](#section-2-stellar-network-and-protocol-integrity)  
-- [Section 3: Security and Risks](#section-3-stellar-security-and-risks)  
+- [Section 2: Stellar Network and Protocol Integrity](#section-2-network-and-protocol-integrity)  
+- [Section 3: Security and Risks](#section-3-security-and-risks)  
 - [Section 4: Axelar Integration Components](#section-4-axelar-integration-components)  
 - [Section 5: Committee Members](#section-5-committee-members)  
 - [Conclusion](#conclusion)  
@@ -282,7 +282,8 @@ contracts.
 ## **Section 4: Axelar Integration Components**
 
 ### 4.1 Code Quality and Transparency
-Interop Labs was responsible for developing the Soroban external contracts. [Axelar Amplifier Stellar](https://github.com/axelarnetwork/axelar-amplifier-stellar) is the Axelar Cross-chain Gateway Protocol implementation developed in Rust programming language. The codebase contains the following components:
+
+Interop Labs was responsible for developing the Soroban integration with Axelar Amplifier. The [Stellar CGP smart contracts](https://github.com/axelarnetwork/axelar-amplifier-stellar) were developed in the Rust programming language and will be deployed to the Soroban platform. The Stellar CGP codebase contains the following components:
 
 - Gas Service
 - Gateway
@@ -292,7 +293,7 @@ Interop Labs was responsible for developing the Soroban external contracts. [Axe
 - Token Manager
 - Stellar Upgrader
 
-Axelar Amplifier Stellar underwent the following audits:
+Stellar CGP underwent the following audits:
 - FYEO [1/23/2025](https://github.com/axelarnetwork/audits/blob/main/audits/2025-01%20FYEO_Soroban.pdf) 
 - Ottersec [Not published](https://github.com/axelarnetwork/audits/blob/main/audits/)
 
@@ -305,12 +306,14 @@ Summary of findings from Stellar CGP audits (Reported-Fixed-Acknowledged):
 
 [Ackee](https://ackee.xyz/) performed a cross-check of audit reports and confirmed that from 7 findings reported by FYEO, 2 were remediated and 5 acknowledged. The Ottersec audit was not published during the integration report writing.
 
-No audit report for [Axelar Amplifier / External Gateways / Stellar](https://github.com/axelarnetwork/axelar-amplifier/tree/main/external-gateways/stellar) code was provided.
+No audit reports were provided for the custom CosmWasm external gateway contract for Stellar ([Axelar Amplifier / External Gateways / Stellar](https://github.com/axelarnetwork/axelar-amplifier/tree/main/external-gateways/stellar)).
 
 ### 4.2 Understanding of Deployment and Maintenance Plans
+
 Deployment scripts for Stellar Axelar components are provided, and the process is well documented in the [Axelar contract deployments repository](https://github.com/axelarnetwork/axelar-contract-deployments/tree/main/stellar). The code is well-structured, and [Ackee](https://ackee.xyz/) did not identify any violations of best practices in the development scripts.
 
 ### 4.3 Mitigation of Potential Risks
+
 Stellar and Axelar confirm that the system includes proper logging and mechanisms to effectively handle unusual situations in the network.
 
 ---
