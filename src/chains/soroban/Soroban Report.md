@@ -211,10 +211,10 @@ As of March 25, the Stellar network [consists of](https://stellarbeat.io): (i)
 183 connectable nodes; (ii) 88 validators; (iii) 74 full validators; (iv) 22
 organizations; (v) 23 top tier validators; (vi) 7 top tier organizations.
 These numbers make Stellar more centralized than competing Proof-of-Stake
-ledgers; for example, XRPL has [954 nodes and 198
-validators](https://xrpscan.com/validators), Tezos has [294 validators
-("bakers")](https://tzstats.com/bakers), and Cardano has [2348 validators
-("pools")](https://cexplorer.io/pool).
+ledgers, like Tezos ([294 validators
+("bakers")](https://tzstats.com/bakers)) and Cardano ([2348 validators
+("pools")](https://cexplorer.io/pool)), while it is on par with XRPL
+([198 validators, of which 35 are trusted (UNL)](https://xrpscan.com/validators)).
 
 6 of the 7 top tier organizations ([Stellar Development Foundation](https://stellarbeat.io/organizations/266107f8966d45eedce41fee2581326d),
 [Blockdaemon Inc](https://stellarbeat.io/organizations/c1a16879b171bc6f0087f884acbea046),
