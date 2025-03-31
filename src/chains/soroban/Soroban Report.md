@@ -22,7 +22,7 @@
 
 The integration of **Stellar Soroban** with **Axelar** enables seamless cross-chain transactions and interoperability by leveraging Axelar's **General Message Passing (GMP)** and **security infrastructure**.  
 
-This integration will allow Stellar developers to access liquidity pools, decentralized applications (dApps), and cross-chain functionalities within the broader Web3 ecosystem. As Stellar’s smart contract platform, Soroban introduces **WASM-based smart contracts** and **Stellar’s scalability framework**, making it a strong candidate for interchain expansion.  
+This integration will allow Stellar developers to access liquidity pools, decentralized applications (dApps), and cross-chain functionalities within the broader Web3 ecosystem. As Stellar’s smart contract platform, Soroban introduces **WASM-based smart contracts** and **Stellar's scalability framework**, making it a strong candidate for interchain expansion.  
 
 ### **1.2 Evaluation Approach**  
 
@@ -44,7 +44,7 @@ The assessment framework focused on the following key areas:
 
 ### 1.4 Assessment Criteria
 
-The desirable properties related to Sui’s architecture and its integration with Axelar included:
+The desirable properties related to Stellar's architecture and its integration with Axelar included:
 
 - **Security**: How Stellar's consensus and Soroban-based contracts safeguard against exploits.
 - **Scalability and Performance**: Stellar's settlement time and transaction throughput and fees.
@@ -65,7 +65,7 @@ Stellar is a **Layer-1 blockchain** designed for **cross-border payments, asset 
 
 #### **Consensus and Validation Model**
 
-Stellar's conensus mechanism implements the notion of federated Byzantine Agreement (FBA). In FBA, each participant locally decides a set of participants (**quorum slice**) that it considers important, or trusted, and finalizes a transaction based on the agreement of the majority of the quorum slice. As a transaction gets finalized across different quorum slices, eventually the entire network deems it finalized, enabling a **decentralized voting process** that ensures fast finality while maintaining security. In this manner, the SCP enables decentralized control via flexible trust assumptions, which can be rooted in real-world interactions between the participants of the system, while also offering low latency and asymptotic security.
+Stellar's conensus mechanism implements the notion of Federated Byzantine Agreement (FBA). In FBA, each participant locally decides a set of participants (**quorum slice**) that it considers important, or trusted, and finalizes a transaction based on the agreement of the majority of the quorum slice. As a transaction gets finalized across different quorum slices, eventually the entire network deems it finalized, enabling a **decentralized voting process** that ensures fast finality while maintaining security. In this manner, the SCP enables decentralized control via flexible trust assumptions, which can be rooted in real-world interactions between the participants of the system, while also offering low latency and asymptotic security.
 
 There are **three types of Stellar Nodes**:
 
@@ -200,10 +200,10 @@ Nonetheless, SCP's implementation in
 include optimizations or other differences from the theoretical abstractions
 which could require further review and validation.
 
-Notably, stellar-core has never been fully audited. Instead, the SDF runs a [bug
-bounty program](https://stellar.org/grants-and-funding/bug-bounty) on
-[immunefi](https://immunefi.com/bug-bounty/stellar/information/) and
-[hackerone](https://hackerone.com/stellar). This lack of full audits reduces the
+Notably, stellar-core has never been fully audited. Instead, the SDF runs [bug
+bounty programs](https://stellar.org/grants-and-funding/bug-bounty) on
+[Immunefi](https://immunefi.com/bug-bounty/stellar/information/) and
+[HackerOne](https://hackerone.com/stellar). This lack of full audits reduces the
 confidence in the implementation's security and resilience.
 
 ### Stellar Network Security and Stability
@@ -218,8 +218,8 @@ Stellar has seen two cases of outage in its 10+ year existence:
 - **April 2021**: The network [halted for 9
   hours](https://status.stellar.org/incidents/7h0czw6mnjzs) on April 6, 2021.
   The cause was some validators, including those run by the SDF, dropping offline
-  and causing an outage to the SDF Horizon service. As a result deposits and
-  withdrawals were halted some exchanges, including
+  and causing an outage to the SDF Horizon service. As a result, deposits and
+  withdrawals were halted on some exchanges, including
   [Bitfinex](https://cryptonary.com/the-stellar-blockchain-down-for-over-seven-hours/)
   and
   [Bitstamp](https://cryptobriefing.com/stellar-blockchain-faces-outage-some-validators-go-offline/).
@@ -232,19 +232,18 @@ of accounts is prioritized over the system's availability. However, they also
 showcase the reliance of the system's stability to the SDF and the risks that
 come from such centralization tendencies.
 
-### Stellar (de)centralization
+### Stellar (De)centralization
 
 As of March 25, the Stellar network [consists of](https://stellarbeat.io): (i)
 183 connectable nodes; (ii) 88 validators; (iii) 74 full validators; (iv) 22
 organizations; (v) 23 top tier validators; (vi) 7 top tier organizations.
 These numbers make Stellar more centralized than competing Proof-of-Stake
-ledgers; for example, XRP has [954 nodes and 198
+ledgers; for example, XRPL has [954 nodes and 198
 validators](https://xrpscan.com/validators), Tezos has [294 validators
 ("bakers")](https://tzstats.com/bakers), and Cardano has [2348 validators
 ("pools")](https://cexplorer.io/pool).
 
-6 of the 7 top tier organizations (
-[Stellar Development Foundation](https://stellarbeat.io/organizations/266107f8966d45eedce41fee2581326d),
+6 of the 7 top tier organizations ([Stellar Development Foundation](https://stellarbeat.io/organizations/266107f8966d45eedce41fee2581326d),
 [Blockdaemon Inc](https://stellarbeat.io/organizations/c1a16879b171bc6f0087f884acbea046),
 [SatoshiPay](https://stellarbeat.io/organizations/753e017d811e12c41ef03b5b4c51a1a5),
 [Franklin Templeton](https://stellarbeat.io/organizations/bc8b7a147ab684c37551a69369b70953),
@@ -258,8 +257,7 @@ runs 5 nodes.
 
 9 (out of 23) top tier validators from 5 of the 7 organizations (SatoshiPay, Franklin
 Templeton, LOBSTR, Creit Technologies LLP, Public Node) demonstrate operation
-warnings regarding history archive verification (
-[SatoshiPay Iowa](https://stellarbeat.io/nodes/GAK6Z5UVGUVSEK6PEOCAYJISTT5EJBB34PN3NOLEQG2SUKXRVV2F6HZY),
+warnings regarding history archive verification ([SatoshiPay Iowa](https://stellarbeat.io/nodes/GAK6Z5UVGUVSEK6PEOCAYJISTT5EJBB34PN3NOLEQG2SUKXRVV2F6HZY),
 [FT SCV 1](https://stellarbeat.io/nodes/GARYGQ5F2IJEBCZJCBNPWNWVDOFK7IBOHLJKKSG2TMHDQKEEC6P4PE4V),
 [FT SCV 2](https://stellarbeat.io/nodes/GCMSM2VFZGRPTZKPH5OABHGH4F3AVS6XTNJXDGCZ3MKCOSUBH3FL6DOB),
 [FT SCV 3](https://stellarbeat.io/nodes/GA7DV63PBUUWNUFAF4GAZVXU2OZMYRATDLKTC7VTCG7AU4XUPN5VRX4A),
@@ -270,14 +268,14 @@ warnings regarding history archive verification (
 and running an outdated Stellar-core version
 ([Alpha Node Validator](https://stellarbeat.io/nodes/GBPLJDBFZO2H7QQH7YFCH3HFT6EMC42Z2DNJ2QFROCKETAPY54V4DCZD)).
 These warnings are significant, since most organizations require agreement from
-them, Tier 1 organizations "bear the safety and
+them. Tier 1 organizations "bear the safety and
 liveness of the Stellar network on their shoulders". Notably, one of their
 validators' main responsibilities is publishing an archive of transactions in
 order to ["make the network more
 resilient"](https://developers.stellar.org/docs/validators/tier-1-orgs).
 
 All validators run the same software
-([stellar-core](https://github.com/stellar/stellar-core)], which highlights the
+([stellar-core](https://github.com/stellar/stellar-core)), which highlights the
 extreme centralization of the software development process around Stellar's core
 protocol. Consequently, bugs in stellar-core can escalate to systemic risks and
 affect the entire Stellar network.
@@ -288,10 +286,10 @@ Soroban's core contracts were [audited by Veridise between October-December
 2023](https://veridise.com/wp-content/uploads/2024/11/VAR_Stellar_Soroban-5.pdf).
 The review discovered 8 issues, of which one was of medium severity (fixed).
 
-On March 2024 the SDF launched the [Soroban Security Audit
+On March 2024, the SDF launched the [Soroban Security Audit
 Bank](https://stellar.org/blog/developers/the-soroban-audit-bank-fostering-a-secure-smart-contract-ecosystem),
 a program for funding security audits of Soroban-based projects. As of March
-2025 it is unclear how many audits and tools have received funding from this
+2025, it is unclear how many audits and tools have received funding from this
 program.
 
 Various tools exist to assist Soroban smart contract developers to write secure
@@ -358,7 +356,7 @@ The **Amplifier Advisory Committee** overseeing this integration consists of the
 
 ## **Conclusion**
 
-The integration of Stellar Soroban with Axelar Network presents an opportunity to
+The integration of Stellar Soroban with the Axelar Network presents an opportunity to
 enable seamless cross-chain transactions and enhance interoperability. The
 evaluation highlights Stellar's strengths, including transaction speed,
 integration with existing financial institutions, and structured governance
@@ -375,7 +373,7 @@ misconfiguration of core validator nodes, highlight the need for security
 assurances via robust mechanisms. The system is also highly reliant on the
 Stellar Development Foundation with respect to the consensus protocol's
 execution, governance, and funding opportunities. Additionally, the lack of
-audit of the Stellar codebase raises concerns for its robustness and adherence
+audit of the stellar-core codebase raises concerns for its robustness and adherence
 to the theoretical consensus protocol's description.
 
 The integration allows Stellar developers to tap into liquidity pools and
@@ -383,4 +381,4 @@ decentralized applications across various systems. In order to reap these
 benefits, addressing the decentralization concerns and security gaps is
 essential. These can be addressed by proactive measures such as expanded code
 audits, decentralized decision-making, and expansion of the protocol's validator
-set, in order to make Stellar a major component of Axelar Network ecosystem.
+set, in order to make Stellar a major component of the Axelar ecosystem.
