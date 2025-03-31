@@ -350,7 +350,14 @@ assurances via robust mechanisms. The system is also highly reliant on the
 Stellar Development Foundation with respect to the consensus protocol's
 execution, governance, and funding opportunities. Additionally, the lack of
 audit of the stellar-core codebase raises concerns for its robustness and adherence
-to the theoretical consensus protocol's description.
+to the theoretical consensus protocol's description. We strongly recommend
+not proceeding with the deployment of the Stellar integration until the
+[Stellar Amplifier CosmWasm
+contracts](https://github.com/axelarnetwork/axelar-amplifier/tree/main/external-gateways/stellar)
+have been audited and the Ottersec audit of the
+[Stellar Soroban WASM edge
+contracts](https://github.com/axelarnetwork/axelar-amplifier-stellar) has been published, and its fixes have been
+confirmed resolved.
 
 The integration allows Stellar developers to tap into liquidity pools and
 decentralized applications across various systems. In order to reap these
