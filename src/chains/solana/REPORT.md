@@ -27,6 +27,7 @@ The Committee’s assessment methodology included the following:
 
 - **Research and Documentation Review**: A detailed review of technical documentation, Solana’s GitHub repositories, whitepapers, and Solana Improvement Documents (SIMDs) to understand the network’s capabilities and integration requirements.
 - **Security Audits and Testing**: Examination of Solana's codebase, previously conducted audits, and tests for vulnerabilities.
+- **Collaboration with the Solana Team**: Ongoing discussions with the Solana development team to understand their infrastructure, upgrade plans, incident response protocols, and readiness for cross-chain integrations.
 
 ### 1.3 Assessment Framework
 
@@ -52,3 +53,11 @@ The desirable properties related to Solana’s architecture and its integration 
 
 
 ---
+
+## Section 3: Security and Risks
+### 3.1 Smart Contract Security and Vulnerabilities
+Solana smart contracts, called programs, are primarily written in Rust and compiled using LLVM into Solana's custom version of eBPF (called sBPF). Hence, any programming language that can be compiled to sBPF can be used to write Solana programs. This includes but is not limited to Rust, C, C++, and Solidity.
+This multi-language support and compiler diversity eliminates single points of failure in the compilation toolchain, enhancing the overall security and resilience of Solana's smart contract ecosystem.
+
+Solana utilizes an account-based model, where all data, including programs, are organized under accounts. This enables the Solana Virtual Machine to perform parallel transaction execution when accessing independent accounts, achieving high throughput. However, it also introduces additional security considerations for developers, who need to grasp the intricacies of this unique programming model in order to write secure programs.
+Anchor, a Rust-based framework for building Solana programs, has been developed to simplify the development process and minimize security risks. Anchor provides simplified syntax and out-of-the-box implementations for common security checks, making it easier to write secure programs.
