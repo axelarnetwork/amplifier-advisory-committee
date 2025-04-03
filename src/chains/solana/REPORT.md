@@ -60,10 +60,9 @@ The desirable properties related to Solana’s architecture and its integration 
 [Solana](https://solana.com/solana-whitepaper.pdf) is a Layer 1 blockchain
 engineered for high performance and scalability, supporting thousands of
 transactions per second with low latency. It employs a system of validators and
-designated leaders who alternate in producing blocks, coordinated by a robust
-scheduling mechanism. Its consensus mechanism is built on a hybrid approach
-combining [Proof-of-History](https://docs.anza.xyz/consensus/synchronization)
-(PoH) with Proof-of-Stake (PoS).
+designated leaders who alternate in producing blocks, running a [hybrid
+consensus mechanism](https://www.shinobi-systems.com/primer.html) that combines
+Proof-of-History (PoH) with Proof-of-Stake (PoS).
 
 Key Architectural Features:
 - **Proof of History (PoH)**: A timekeeping mechanism that provides a historical
@@ -115,6 +114,11 @@ Key Architectural Features:
   ["programs"](https://solana.com/docs/core/programs), which are written in a
   Solana-focused language, [Anchor](https://www.anchor-lang.com/docs), or [native
   Rust](https://solana.com/docs/programs/rust).
+
+Notably, no formal security analysis of Solana's consensus mechanism are
+available as of March 2025. Therefore, it is unclear whether and under which
+assumptions this mechanism guarantees the ledger's robustness and core
+properties, safety and liveness.
 
 ### 2.2 Governance and Compliance
 
