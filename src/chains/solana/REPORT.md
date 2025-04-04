@@ -150,9 +150,9 @@ Evidence of this is the Wormhole bridge exploit in February 2022, which resulted
 Anchor, a Rust-based framework for building Solana programs, has been developed to simplify the development process and minimize security risks. Anchor provides simplified syntax and out-of-the-box implementations for common security checks, making it easier to write secure programs.
 
 Solana demonstrates an ongoing commitment to strong security standards through:
-* Maintaining a lucrative [bug bounty program](https://github.com/anza-xyz/agave/security#security-bug-bounties).
+* Maintaining a lucrative [bug bounty program](https://github.com/anza-xyz/agave/security#security-bug-bounties) which incentivizes community-driven vulnerability identification.
 * Performing frequent and thorough [audits](https://github.com/anza-xyz/security-audits) with third-party auditing firms such as Zellic, Halborn, OtterSec, Trail of Bits, and others.
-* Quick response times to security vulnerabilities and network outages.
+* Quick response times to security vulnerabilities and network outages indicating good monitoring mechanisms.
 
 However, Solana over the years has been plagued by a series of outages and other incidents which are important to consider:
 - **December 4, 2020:**  A six-hour outage occurred due to a block propagation bug in Solana’s Turbine protocol. The problem was resolved by improving block tracking and fault detection mechanisms.
@@ -164,3 +164,14 @@ However, Solana over the years has been plagued by a series of outages and other
 - **February 25, 2023:** A 19-hour outage was triggered due to an issue in Turbine’s deduplication logic. The network had to manually downgrade to the previous stable version.
 - **February 6, 2024:** A five-hour outage occurred due to a bug in the Agave client’s just-in-time (JIT) compiler. The legacy loader that was causing the issue was disabled.
 - **August 5–8, 2024:** A critical ELF file alignment bug, that could have caused network outage, was quietly patched in coordination with validators. The disclosure raised concerns about decentralization.
+
+As of March 2025, Solana has not experienced any outages since February 2024. However, their live production network is still called Mainnet-beta, which indicates that continous vigilance is still required.
+
+### 3.2 Risks and Concerns
+Areas of concern include:
+- **Consensus Mechanism:** As of March 2025, no formal security analysis of Solana’s consensus mechanism is available.
+- **Network Outages:** Solana has experienced a series of outages over the years. Potential network stalls should be taken seriously into account when designing cross-chain applications enabled by this Axelar integration.
+- **Centralization Risks:** There are centralization risks about the Solana network that should be considered: (1) Agave is the only validator client as of March 2025, although there are plans to launch Firedancer, a new independent validator client, in 2025; (2) The Solana foundation controls a large sum of the network tokens; (3) The Solana Foundation is the main force of funding in the ecosystem; (4) Secretly coordinated network upgrades such as the one in August 2024.
+- **Smart Contract Security:** Solana introduces a unique programming model that requires careful attention from developers in order to avoid pitfalls that expose the system to attacks.
+
+Despite its challenges, Solana’s commitment to innovation and proactive security measures positions it as a strong player in the blockchain ecosystem. By addressing these concerns and continuing to prioritize security, Solana can maintain trust and support its growing user base.
