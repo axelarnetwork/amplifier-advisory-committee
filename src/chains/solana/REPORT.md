@@ -4,9 +4,9 @@
 - **Chain Name**: Solana
 - **Proposal Reviewed**: [Solana Integration Proposal](PROPOSAL.md)
 - **Source Code**:
-  - [Solana Contracts](https://github.com/eigerco/solana-axelar/tree/main/solana)
-  - [Axelar Contracts](https://github.com/eigerco/solana-axelar/tree/main/evm-contracts), which are the standard [EVM contracts](**TODO: add link**) with minor modifications.
-
+  - [Programs on Solana](https://github.com/eigerco/solana-axelar/tree/main/solana)
+  - [Multisig Prover Contract on Axelar](https://github.com/eigerco/axelar-amplifier/tree/add-multisig-prover-sol-logic/contracts/multisig-prover)
+  - [Axelar Relayer](https://github.com/eigerco/axelar-solana-relayer)
 
 ### Table of Contents
   #### [Section 1: Assessment Methodology](#section-1-assessment-methodology-1)
