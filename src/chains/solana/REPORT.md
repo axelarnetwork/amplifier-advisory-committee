@@ -133,12 +133,10 @@ nonbinding, advisory manner, whereas the final decision occurs when validators
 choose which software version to run. Solana stakers participate indirectly by
 delegating their voting rights to validators.
 
-The [Solana Foundation](https://solana.org) plays a central role in Solana’s
-ecosystem in various ways. First, it is the only entity that develops the
-ledger’s core node software. Second, at the system’s onset it directly held a
-[10.5% of all tokens](https://crypto.com/en/university/solana-tokenomics) and
-controlled 38.9% by managing the Community Reserve. Third, it is the main force
-of [funding](https://solana.org/grants-funding) in the ecosystem.
+The [Solana Foundation](https://solana.org) and [Solana Labs](https://www.solanalabs.com) play a central role in Solana’s ecosystem in various ways.
+First, the only validator implementation as of March 2025 for Solana is Agave, developed by Anza, a company consisting of former executives and core engineers from Solana Labs. The software was [forked](https://solana.com/ru/news/solana-labs-anza-fork) by the [original Solana validator client](https://github.com/solana-labs/solana) developed by Solana Labs which has since been archived. Second, at the system’s onset, the Solana Foundation directly held [10.5% of all tokens](https://crypto.com/en/university/solana-tokenomics) and controlled 38.9% by managing the Community Reserve.
+Additionally, 12.5% of the tokens went to the founding team and 31% went to venture capitalists.
+Third, the Solana Foundation is the main force of [funding](https://solana.org/grants-funding) in the ecosystem.
 
 ---
 
