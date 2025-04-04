@@ -165,7 +165,7 @@ However, Solana over the years has been plagued by a series of outages and other
 - **February 6, 2024:** A five-hour outage occurred due to a bug in the Agave client’s just-in-time (JIT) compiler. The legacy loader that was causing the issue was disabled.
 - **August 5–8, 2024:** A critical ELF file alignment bug, that could have caused network outage, was quietly patched in coordination with validators. The disclosure raised concerns about decentralization.
 
-As of March 2025, Solana has not experienced any outages since February 2024. However, their live production network is still called Mainnet-beta, which indicates that continous vigilance is still required.
+As of March 2025, Solana has not experienced any outages since February 2024. However, their live production network is still called Mainnet-beta, which indicates that continuous vigilance is still required.
 
 ### 3.2 Risks and Concerns
 Areas of concern include:
