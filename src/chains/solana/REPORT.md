@@ -48,11 +48,12 @@ Eiger team was responsible for developing the Solana external contracts (program
 [Solana Axelar](https://github.com/eigerco/solana-axelar/tree/main/solana/programs) repository contains the Axelar Cross-chain Gateway Protocol implementation
 developed in Rust programming language for the Solana blockchain. The programs are "native Rust" programs and do not use the Anchor framework.
 
-The Solana Amplifier ampd implementation was merged to the [Axelar Amplifier](https://github.com/axelarnetwork/axelar-amplifier/pull/744) repository, while the Solana Amplifier Multisig & Prover contracts logic are in the [eiger Axelar Amplifier](https://github.com/eigerco/axelar-amplifier/tree/add-multisig-prover-sol-logic) repository. 
+The Solana Amplifier ampd implementation was merged to the [Axelar Amplifier](https://github.com/axelarnetwork/axelar-amplifier/pull/744) repository, while the Solana Amplifier Multisig Prover & Voting Verifier contracts logic are in the [Eiger Axelar Amplifier](https://github.com/eigerco/axelar-amplifier/tree/add-multisig-prover-sol-logic) repository. 
 [Axelar Solana Relayer](https://github.com/eigerco/axelar-solana-relayer) repository contains the implementation of the relayer. 
 
 The codebase for all 3 components (Solana Axelar contracts, Solana Amplifier and Axelar Solana Relayer) underwent the following audits:
 - FYEO [03/2025](https://github.com/fyeo-io/public-audit-reports/blob/main/Code%20Audit%20Reports/2025/Axelar/Axelar%20Foundation%20-%20Security%20Code%20Review%20of%20Axelar%20-%20Solana%20Integration%20v1.0.pdf)
+- Ackee TBD (ongoing audit, this section will be updated after the report is published)
 
 Summary of findings from the audits (Reported-Fixed-Acknowledged):
 
