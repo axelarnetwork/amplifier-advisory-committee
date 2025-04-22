@@ -84,7 +84,7 @@ Key Architectural Features:
   Briefly, Solana’s execution is divided in epochs, with each epoch having a
   pre-defined leader schedule. To compute the schedule, a PoH _height_ is used
   to both seed a pseudo-random algorithm. Following, the leader schedule is
-  computed from this algorithm, by randomly sampling the set active validators
+  computed from this algorithm, by randomly sampling the set of active validators
   weighted by their stake at the chosen height. Additionally, validators
   participate in [voting](https://docs.anza.xyz/consensus/vote-signing) in
   order to resolve forks, with each validator weighted by their stake (own and
