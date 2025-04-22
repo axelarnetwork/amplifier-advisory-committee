@@ -156,9 +156,9 @@ Solana demonstrates an ongoing commitment to strong security standards through:
 
 However, Solana over the years has been plagued by a series of outages and other incidents which are important to consider:
 - **December 4, 2020:**  A six-hour outage occurred due to a block propagation bug in Solana’s Turbine protocol. The problem was resolved by improving block tracking and fault detection mechanisms.
-- **September 14, 2021:** A 17-hour outage caused by a DDOS attack that pushed transaction loads beyond the network’s capacity, stalling consensus. The fix involved rate limiting and improved consensus voting prioritization.
+- **September 14, 2021:** A 17-hour outage caused by a DDoS attack that pushed transaction loads beyond the network’s capacity, stalling consensus. The fix involved rate-limiting and improved consensus voting prioritization.
 - **January 6 - 12, 2022:** Degraded performance and partial outages were observed due to excessive duplicate transactions spammed by bots. Solana 1.8.12 and 1.8.14 introduced deduplication and performance optimizations.
-- **April 30, 2022:** A seven-hour outage due to high number of transactions that overwhelmed the network. Solana showed much improved performance compared to the 2021 DDOS attack and the patch was quickly released.
+- **April 30, 2022:** A seven-hour outage due to high number of transactions that overwhelmed the network. Solana showed much improved performance compared to the 2021 DDoS attack and the patch was quickly released.
 - **June 1, 2022:** A four-and-a-half-hour outage occurred due to a consensus failure triggered by duplicate processing of durable nonce transactions. The bug was patched in version 1.10.23.
 - **September 30, 2022:** A six-hour outage occurred due to a bug in the consensus implementation that caused a fork. It was quickly resolved.
 - **February 25, 2023:** A 19-hour outage was triggered due to an issue in Turbine’s deduplication logic. The network had to manually downgrade to the previous stable version.
