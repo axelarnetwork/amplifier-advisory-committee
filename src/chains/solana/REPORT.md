@@ -70,7 +70,7 @@ Proof-of-History (PoH) with Proof-of-Stake (PoS).
 Key Architectural Features:
 - **Proof of History (PoH)**: A timekeeping mechanism that provides a historical
   record proving that an event has occurred at a specific moment in time. At its
-  core, PoH employs a delay function based on sequentially computing hashes,
+  core, PoH uses a delay function based on sequentially computing hashes,
   where each new hash output depends on the previous one. By requiring these
   computations to be executed in order, the computation of the repeated hashing
   function cannot be parallelized, thereby adding a delay. Note that the
