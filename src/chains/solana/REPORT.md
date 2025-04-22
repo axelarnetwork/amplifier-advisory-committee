@@ -118,7 +118,7 @@ Key Architectural Features:
   Solana-focused language, [Anchor](https://www.anchor-lang.com/docs), or [native
   Rust](https://solana.com/docs/programs/rust).
 
-Notably, no formal security analysis of Solana’s consensus mechanism are
+Notably, no formal security analysis of Solana’s consensus mechanism is
 available as of March 2025. Therefore, it is unclear whether and under which
 assumptions this mechanism guarantees the ledger’s robustness and core
 properties, safety and liveness.
