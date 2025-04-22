@@ -129,7 +129,7 @@ Solana’s governance model balances between stakers and validators. Essentially
 the community proposes changes following the [Solana Improvement Document
 (SIMD)](https://github.com/solana-foundation/solana-improvement-documents)
 format. Validators signal their stance by voting on a proposed change in a
-nonbinding, advisory manner, whereas the final decision occurs when validators
+non-binding, advisory manner, whereas the final decision occurs when validators
 choose which software version to run. Solana stakers participate indirectly by
 delegating their voting rights to validators.
 
