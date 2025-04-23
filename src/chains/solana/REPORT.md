@@ -80,10 +80,20 @@ The current Relayer can only execute calls to Solana ITS. If other programs want
 ---
 
 ## Conclusion
+The Solana integration with Axelar Network presents a significant opportunity to expand interoperability and enable seamless cross-chain transactions for developers. The evaluation highlights Solana’s strengths, including its ability to handle high transaction throughput with low latency, hybrid consensus mechanism, and unique account-based smart contract architecture.
+Additionally, Axelar's integration demonstrates good structure and overall adherence to best practices.
+
+Nonetheless, the assessment identified critical areas for improvement. Solana’s mainnet outages, lack of formal security analysis of its consensus mechanism and centralization risks raise concerns about network resilience and community engagement. Historical vulnerabilities, including denial-of-service (DoS) and smart contract vulnerabilities, emphasize the need for robust security mechanisms. The complexity of Solana’s architecture and reliance on validator coordination in high-load scenarios necessitate enhanced fault tolerance and operational readiness.
+
+The integration offers Solana developers access to broader liquidity pools and interoperable dApps, fostering innovation across the ecosystem. In order to reap these benefits, addressing the decentralization concerns and security gaps is essential. By implementing proactive measures such as expanded audits and bug bounty programs, improved disaster recovery plans, and decentralized decision-making, Solana can solidify its position as a major component of the Axelar Network ecosystem.
 
 ---
 
 ## Next Steps
+
+To ensure the successful integration of Solana with Axelar Network and long-term operational resilience, the following actions are recommended:
+
+Focus on maintaining integration stability and performance through continuous monitoring and proactive issue detection, especially for the Relayer component. Re-check in-progress audits of the Solana Axelar programs after they are finished. Additionally, the development team should design and implement a proactive outage management plan to address potential network disruptions on Solana.
 
 ---
 
