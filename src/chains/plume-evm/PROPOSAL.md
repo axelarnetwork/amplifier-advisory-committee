@@ -46,9 +46,16 @@
 
 - **Smart Contract Protection:** The platform's smart contracts leverage standard EVM security patterns combined with additional compliance measures essential for tokenized real-world assets. These include transaction monitoring systems, sanctions screening protocols, and built-in regulatory compliance tools that protect both users and asset issuers.
 
+- **Regulatory Alignment:** As the RWA space continues to evolve, Plume's security approach focuses on maintaining compliance with relevant regulations while providing the transparency and verifiability expected in blockchain systems. This balanced approach helps ensure that tokenized assets remain secure throughout their lifecycle on the network.
+
 - **External Verification:** For third-party verification, Plume works with security partners to audit critical components of its infrastructure, with details available in their [security documentation](https://docs.plume.org/plume/plume-security/audits-and-security). The platform also implements continuous security monitoring to identify and address potential threats in real-time.
 
-- **Regulatory Alignment:** As the RWA space continues to evolve, Plume's security approach focuses on maintaining compliance with relevant regulations while providing the transparency and verifiability expected in blockchain systems. This balanced approach helps ensure that tokenized assets remain secure throughout their lifecycle on the network.
+- Halborn Audit (January 2025): Assessed Plume's Airdrop Distributor and Staking contracts. Identified 10 findings (2 informational, 8 low severity), all of which were addressed by Plume.
+Report: https://www.halborn.com/audits/plume/plume-contracts
+
+- CertiK Skynet: Ongoing security assessments are available on [CertiK's platform](https://skynet.certik.com/projects/plume-network).
+
+- Veritas Protocol Audit: The AI-driven audit report can be reviewed [here](https://www.veritasprotocol.com/audits/plume-audit).
 
 ### Axelar Integration Components
 
@@ -65,8 +72,9 @@ The purpose of this review is to ensure that the integration of Plume EVM with t
 ### Additional Information
 
 - **GitHub Repository:** https://github.com/plumenetwork
-- **Developer Documentation:** https://docs.plumenetwork.xyz/plume
+- **Developer Documentation:** https://docs.plumenetwork.org/plume
 - **Plume Manifesto:** https://plume.org/blog/manifesto
+- **Plume Explorer:** Real-time network activity and smart contract verification can be accessed via the [Plume Explorer](https://explorer.plume.org/).
 
 ## Community Involvement
 
