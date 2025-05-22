@@ -20,10 +20,15 @@
 - **Management Team Credentials:** Plume Network was founded by a team with extensive industry experience: Chris Yin (CEO, former VP of Product at Rainforest and Principal at Scale Venture Partners), Eugene Y.Q. Shen (CTO, previously a Senior Software Engineer at dYdX and Robinhood Crypto), and Teddy Pornprinya (CBO, formerly at Binance, Swim Protocol, and Coinbase Ventures). The broader team includes professionals from leading companies including LayerZero, Galaxy Digital, JP Morgan, and other prominent Web3 and traditional finance organizations.
 
 - **Notable Use Cases:**
-  * **Tokenized Financial Assets:** Integration with platforms like DigiFT (regulated exchange for on-chain real-world assets) and MatrixDock (tokenized U.S. T-Bills).
+  * **Tokenized Financial Assets:** Integration with platforms like [DigiFT](https://www.digift.sg/index) (regulated exchange for on-chain real-world assets) and [MatrixDock](https://www.matrixdock.com/) (tokenized U.S. T-Bills).
   * **Private Credit & Lending:** Protocols such as Credible (lending secured by RWAs like private credit and trade receivables) and Kasu (risk-optimized private credit yields).
-  * **Real Estate & Physical Assets:** Projects like LandX (platform for investing in farmland and agricultural commodities) and Mattereum (tokenization of physical assets with legal protections).
+  * **Real Estate & Physical Assets:** Projects like [LandX](https://app.landx.io/) (platform for investing in farmland and agricultural commodities) and Mattereum (tokenization of physical assets with legal protections).
   * **Infrastructure & Alternative Assets:** Solutions for tokenizing renewable energy projects, luxury goods, collectibles, and other alternative asset classes.
+  * **[Nest Protocol](https://www.nestprotocol.org/):** A flagship staking platform within the Plume ecosystem, Nest offers [institutional-grade yields]( https://plumenetwork.xyz/blog/rwaxyz-analytics) backed by tokenized assets such as U.S. Treasuries, private credit, and alternative investments. Vaults include assets from BlackRock’s BUIDL, Hamilton Lane, and Ondo USDY.
+  * **RWA Inc.:** A regulated tokenization platform based in the UAE, RWA Inc. has [partnered with Plume](https://medium.com/@RWA_Inc_/rwa-inc-partners-with-the-plume-network-to-elevate-tokenization-sector-059d638ec164) to streamline asset issuance and liquidity provisioning.
+  * **[Moca Network](https://www.animocabrands.com/moca-network-plume-partner-to-bring-privacy-preserved-institutional-grade-rwa-yield-to-users) (Animoca Brands) – Digital ident)):** Moca integrates AIR Kit digital identity with Plume, allowing 700M+ users access to institutional-grade RWA yields.
+  * **[RWA.xyz](https://plumenetwork.xyz/blog/rwaxyz-analytics) Integration:** Plume has integrated with RWA.xyz, a leading analytics platform for tokenized real-world assets. This partnership allows for real-time data accessibility and transparency for investors and issuers within the Plume ecosystem.
+  * **[Polytrade and Brickken](https://cryptopotato.com/plume-network-announces-key-projects-to-reinvent-real-world-asset-tokenization):** These RWA-focused projects are part of Plume’s ecosystem, utilizing its infrastructure to tokenize assets and integrate with DeFi applications.
 
 #### Technology Overview
 
@@ -37,7 +42,7 @@
   - **Arc Tokenization Engine:** A comprehensive framework for efficiently tokenizing real-world assets with integrated compliance workflows, reducing barriers for asset issuers and providing a streamlined path to bring assets onchain.
   - **Nexus Data Highway:** A specialized data integration layer that bridges real-world information with blockchain applications through partnerships with leading oracle providers, enabling accurate on-chain representations of off-chain data.
   - **Smart Wallets:** Built-in wallet technology with embedded custody and compliance features, allowing RWA holders to leverage their assets within DeFi applications for staking, collateralization, and yield generation.
-  - **SkyLink:** Cross-chain connectivity solution that enables RWA yields to be distributed across multiple blockchain networks, expanding accessibility and liquidity for tokenized assets.
+  - **[SkyLink](https://www.theblockbeats.info/en/news/56710):** Cross-chain connectivity solution that enables RWA yields to be distributed across multiple blockchain networks, expanding accessibility and liquidity for tokenized assets.
 - **Regulatory Compliance Framework:** Built-in support for tokenization standards that enable compliance with securities regulations, including features for identity verification, transfer restrictions, and asset management controls that meet the requirements of regulated RWA markets.
 
 #### Security Considerations
@@ -52,9 +57,16 @@
 
 ### Axelar Integration Components
 
-- **External Gateway Contract:** Because Plume is fully EVM-compatible, the Axelar integration for the external gateway contracts will be those found here: https://github.com/axelarnetwork/axelar-gmp-sdk-solidity/blob/main/contracts/gateway/INTEGRATION.md. These contracts were developed by the Interop Labs team and fully audited.
+- **External Gateway Contract:** Because Plume is fully EVM-compatible, the Axelar integration for the external gateway contracts will be those found here: https://github.com/axelarnetwork/axelar-gmp-sdk-solidity/blob/main/contracts/gateway/INTEGRATION.md. These contracts were developed by the Interop Labs team and fully [audited](https://github.com/axelarnetwork/audits).
 - **Amplifier Contracts:** Similarly, the Amplifier contracts (Gateway, Voting Verifier, Multisig Prover) on the Axelar Network will be those developed by the Interop Labs team, which can be found here: https://github.com/axelarnetwork/axelar-amplifier/tree/main/contracts
 - **ITS Contract:** The Interchain Token Service contracts will be deployed without modification, allowing seamless token transfers between Plume and other chains in the Axelar ecosystem: https://github.com/axelarnetwork/interchain-token-service
+
+### Current Status
+
+- **Testnet launched:** Plume has launched its public testnet with over 3.75 million active wallets and 270+ million transactions.
+- **Mainnet launch:** Scheduled for Q3 2025.
+- **Audit reports:** Halborn and Veritas Protocol audits completed. No high or critical issues found; low-severity findings have been resolved.  
+- **Integration readiness:** Plume is fully EVM-compatible. GMP messaging is already under test, and integration with Axelar’s ITS and Amplifier contracts is expected to proceed without modification.
 
 ## Request for the Amplifier Advisory Committee Review
 
